@@ -9,6 +9,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get products_url
     assert_response :success
+    assert_select 'title', "Pragprog Books Online Store"
+    assert_select 'h1', "Products"
   end
 
   test "should get new" do
@@ -22,6 +24,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to product_url(Product.last)
+    assert_equal 'Product was successfully created.', flash[:notice]
   end
 
   test "should show product" do
@@ -37,6 +40,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   test "should update product" do
     patch product_url(@product), params: { product: { description: @product.description, image_url: @product.image_url, price: @product.price, title: @title } }
     assert_redirected_to product_url(@product)
+    assert_equal 'Product was successfully updated.', flash[:notice]
   end
 
   test "should destroy product" do
