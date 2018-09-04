@@ -71,7 +71,10 @@ class ProductsController < ApplicationController
     @latest_order = @product.orders.order(:updated_at).last
     if stale?(@latest_order)
       respond_to do |format|
+        format.html
         format.atom
+        format.json { render json: @product.to_json(include: :orders) }
+        format.xml  { render xml: @product.to_xml(include: :orders) }
       end
     end
   end
