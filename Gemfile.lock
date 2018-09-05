@@ -42,9 +42,20 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
     bindex (0.5.0)
     builder (3.2.3)
+    capybara (2.18.0)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (>= 2.0, < 4.0)
+    childprocess (0.9.0)
+      ffi (~> 1.0, >= 1.0.11)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -81,8 +92,11 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.4-x64-mingw32)
       mini_portile2 (~> 2.3.0)
+    public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.5)
+    rack-proxy (0.6.4)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.1.6)
@@ -112,6 +126,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rubyzip (1.2.2)
     sass (3.5.7)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -123,6 +138,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    selenium-webdriver (3.14.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.2)
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -148,9 +166,15 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
+    webpacker (3.5.5)
+      activesupport (>= 4.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 4.2)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
+    xpath (3.1.0)
+      nokogiri (~> 1.8)
 
 PLATFORMS
   x64-mingw32
@@ -158,17 +182,20 @@ PLATFORMS
 DEPENDENCIES
   activemodel-serializers-xml
   byebug
+  capybara (~> 2.13)
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
   puma (~> 3.0)
   rails (~> 5.1.3)
   sass-rails (~> 5.0)
+  selenium-webdriver
   sqlite3
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  webpacker (~> 3.0)
 
 BUNDLED WITH
    1.16.4
