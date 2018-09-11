@@ -58,18 +58,19 @@
 			padding: 0.5em 0;
 		}
 	}
-}
 
-@keyframes product-highlight {
+	@keyframes product-highlight {
 	0% {
 		background: #8f8;
-	}
+		}
 
 	100% {
 		background: none;
-	}
+		}
 }
 
 .product-highlight {
 	animation: product-highlight 1s;
 }
+}
+
