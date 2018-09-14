@@ -36,6 +36,9 @@ gem 'webpacker', '~> 3.0'
 # gem 'capistrano-rails', group: :development
 gem 'capybara', '~> 2.13'
 gem 'selenium-webdriver'
+gem 'exception_notification', '~> 4.2', '>= 4.2.2'
+gem "letter_opener", :group => :development
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
