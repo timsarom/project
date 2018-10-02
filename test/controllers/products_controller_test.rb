@@ -58,4 +58,11 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to products_url
   end
+
+  test "should require login" do
+    logout
+    get products_url
+    follow_redirect!
+    assert_select 'h2', "Please Log In"
+  end
 end

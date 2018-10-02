@@ -54,12 +54,12 @@ config.webpacker.check_yarn_integrity = true
   # routes, locales, etc. This feature depends on the listen gem.
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  Rails.application.config.middleware.use ExceptionNotification::Rack,
-  :email => {
-    :email_prefix => "[PREFIX] ",
-    :sender_address => %{"notifier" <notifier@example.com>},
-    :exception_recipients => %w{notifier@example.com}
-  }
+  # Rails.application.config.middleware.use ExceptionNotification::Rack,
+  # :email => {
+  #   :email_prefix => "[PREFIX] ",
+  #   :sender_address => %{"notifier" <notifier@example.com>},
+  #   :exception_recipients => %w{notifier@example.com}
+  # }
 
     config.action_mailer.delivery_method = :test
 end
