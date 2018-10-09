@@ -40,6 +40,7 @@ gem 'exception_notification', '~> 4.2', '>= 4.2.2'
 gem "letter_opener", :group => :development
 gem "will_paginate"
 gem 'i18n-js'
+gem 'money-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

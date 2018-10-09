@@ -27,8 +27,8 @@ class ApplicationController < ActionController::Base
 	# 	end
 	# end
 
-	def error_occured
-		ApplicationMailer.application_error(@error).deliver_later
+	def error_occured(error)
+		ApplicationMailer.application_error(error).deliver_later
 		redirect_to store_index_url, notice: "Application error occured"
 	end
 
