@@ -2,7 +2,11 @@ class ApplicationController < ActionController::Base
 	before_action :authorize
 	before_action :set_i18n_locale_from_params
 	protect_from_forgery with: :exception
-	rescue_from ActiveRecord::RecordNotFound, with: :error_occured
+	# rescue_from ActiveRecord::RecordNotFound, with: :error_occured
+	rescue_from ActiveRecord::RecordNotFound do |exception|
+		ApplicationMailer.application_error(@exception).deliver_later
+		redirect_to store_index_url, notice: "Application error occured"
+	end
 
 	protected
 
@@ -27,10 +31,10 @@ class ApplicationController < ActionController::Base
 	# 	end
 	# end
 
-	def error_occured(error)
-		ApplicationMailer.application_error(error).deliver_later
-		redirect_to store_index_url, notice: "Application error occured"
-	end
+	# def error_occured
+	# 	ApplicationMailer.application_error(@error).deliver_later
+	# 	redirect_to store_index_url, notice: "Application error occured"
+	# end
 
 	def set_i18n_locale_from_params
 		if params[:locale]
