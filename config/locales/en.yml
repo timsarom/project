@@ -66,7 +66,7 @@ en:
       submit: "Place Order"
       pay_types:
         check: "Check"
-        credit_card: "Credit Card"
+        credit_card: "Credit card"
         purchase_order: "Purchase order"
       check_pay_type:
         routing_number: "Routing #"
@@ -83,5 +83,5 @@ en:
     template:
       body: "There are problems with following fields:"
       header:
-        one: "1 error has prevented this %{model} from being saved:"
+        one: "1 error has prevented this %{model} from being saved"
         other: "%{count} errors has prevented this %{model} from being saved"
