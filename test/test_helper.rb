@@ -21,7 +21,6 @@ class ActionDispatch::IntegrationTest
 	end
 
 	def setup
-		Rails.application.load_seed
 		login_as users(:one)
 		@headers = { Authorization: ActionController::HttpAuthentication::Basic.encode_credentials('dave', 'secret') }
 	end
