@@ -7,8 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails51 for more book information.
 #---
 # encoding: utf-8
-Product.delete_all
-Product.create!(title: 'Rails, Angular, Postgres, and Bootstrap',
+Product.find_or_create_by(title: 'Rails, Angular, Postgres, and Bootstrap',
   description:
     %{<p>
       <em>Powerful, Effective, and Efficient Full-Stack Web Development</em>
@@ -25,7 +24,7 @@ Product.create!(title: 'Rails, Angular, Postgres, and Bootstrap',
   price: 45.00,
   locale: 'en')
 # . . .
-Product.create!(title: 'Seven Mobile Apps in Seven Weeks',
+Product.find_or_create_by(title: 'Seven Mobile Apps in Seven Weeks',
   description:
     %{<p>
       <em>Native Apps, Multiple Platforms</em>
@@ -40,7 +39,7 @@ Product.create!(title: 'Seven Mobile Apps in Seven Weeks',
   locale: 'en')
 # . . .
 
-Product.create!(title: 'Ruby Performance Optimization',
+Product.find_or_create_by(title: 'Ruby Performance Optimization',
   description:
     %{<p>
       <em>Why Ruby Is Slow, and How to Fix It</em> 
@@ -57,7 +56,40 @@ Product.create!(title: 'Ruby Performance Optimization',
   price: 46.00,
   locale: 'en')
 
-PayTypeName.delete_all
-PayTypeName.create!(name: 'Check')
-PayTypeName.create!(name: 'Credit Card')
-PayTypeName.create!(name: 'Purchase Order')
+Product.find_or_create_by(title: 'Libro numero 1 en español',
+  description:
+    %{<p>
+      Potente, eficaz y eficiente Desarrollo web de pila completa Como 
+      desarrollador de Rails, le interesa la experiencia y el rendimiento 
+      del usuario, pero también desea un código simple y fácil de mantener. 
+      Obtenga todo esto al abarcar la pila completa de desarrollo web, desde 
+      diseñar con Bootstrap, crear una interfaz de usuario interactiva con 
+      AngularJS, hasta almacenar datos de manera rápida y confiable en PostgreSQL. 
+      Obtenga una visión holística del desarrollo de pila completa para crear 
+      aplicaciones utilizables y de alto rendimiento, y aprenda a usar estas 
+      tecnologías de manera efectiva en un entorno Ruby on Rails.
+      </p>},
+  image_url: 'lorem.jpg',
+  price: 55.00,
+  locale: 'es')
+
+Product.find_or_create_by(title: 'Libro de español 2',
+  description:
+    %{<p>
+      Por qué Ruby es lento y cómo solucionarlo, no tiene que aceptar un rendimiento 
+      lento de Ruby o Rails. En esta guía completa para la optimización de Ruby, 
+      aprenderá a escribir código Ruby más rápido, pero eso es solo el comienzo. 
+      Vea exactamente qué hace lento al código de Ruby y Rails, y cómo solucionarlo. 
+      Alex Dymo lo guiará a través de los peligros de la memoria y la optimización 
+      de la CPU, la generación de perfiles, la medición, las pruebas de rendimiento, 
+      la recolección de basura y el ajuste. Encontrarás que todas esas cosas 
+      "difíciles" no son tan difíciles después de todo, y tu código ejecutará órdenes 
+      e magnitud más rápido.
+      </p>},
+  image_url: 'dcbang.jpg',
+  price: 887.00,
+  locale: 'es')
+
+PayType.find_or_create_by(name: 'Check')
+PayType.find_or_create_by(name: 'Credit Card')
+PayType.find_or_create_by(name: 'Purchase Order')

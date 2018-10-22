@@ -66,8 +66,8 @@ en:
       submit: "Place Order"
       pay_types:
         check: "Check"
-        credit_card: "Credit card"
-        purchase_order: "Purchase order"
+        credit_card: "Credit Card"
+        purchase_order: "Purchase Order"
       check_pay_type:
         routing_number: "Routing #"
         account_number: "Account #"

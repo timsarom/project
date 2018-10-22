@@ -11,6 +11,7 @@ class ActiveSupport::TestCase
 end
 
 class ActionDispatch::IntegrationTest
+	Rails.application.load_seed
 	def login_as(user)
 		post login_url, params: { name: user.name, password: 'secret' }
 	end
@@ -20,6 +21,8 @@ class ActionDispatch::IntegrationTest
 	end
 
 	def setup
+		Rails.application.load_seed
 		login_as users(:one)
+		@headers = { Authorization: ActionController::HttpAuthentication::Basic.encode_credentials('dave', 'secret') }
 	end
 end
