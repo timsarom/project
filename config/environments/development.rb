@@ -61,5 +61,5 @@ config.webpacker.check_yarn_integrity = true
   #   :exception_recipients => %w{notifier@example.com}
   # }
 
-    config.action_mailer.delivery_method = :test
+    config.action_mailer.delivery_method = :letter_opener
 end

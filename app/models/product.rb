@@ -12,6 +12,8 @@ class Product < ApplicationRecord
 		message: 'must be a URL for GIF, JPG or PNG image.'
 	}
 
+	monetize :price_cents
+
 	private
 
 	def ensure_not_referenced_by_any_line_item

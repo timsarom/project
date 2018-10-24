@@ -4,14 +4,14 @@ one:
   title: MyString
   description: MyText
   image_url: lorem.jpg
-  price: 9.99
+  price_cents: 999
   locale: en
 
 two:
   title: MyString
   description: MyText
   image_url: lorem.jpg
-  price: 9.99
+  price_cents: 999
   locale: en
 
 ruby:
@@ -20,6 +20,6 @@ ruby:
     Ruby is the fastest growing and most exciting dynamic
     language out there. If you want to get working programs
     delivered fast, you should add Ruby to your toolbox.
-  price: 49.50
+  price_cents: 4950
   image_url: ruby.jpg
   locale: en

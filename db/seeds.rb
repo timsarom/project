@@ -21,7 +21,7 @@ Product.find_or_create_by(title: 'Rails, Angular, Postgres, and Bootstrap',
       environment.
       </p>},
   image_url: 'dcbang.jpg',    
-  price: 45.00,
+  price_cents: 4500,
   locale: 'en')
 # . . .
 Product.find_or_create_by(title: 'Seven Mobile Apps in Seven Weeks',
@@ -35,7 +35,7 @@ Product.find_or_create_by(title: 'Seven Mobile Apps in Seven Weeks',
       out which cross-platform solution makes the most sense for your needs.
       </p>},
   image_url: '7apps.jpg',
-  price: 26.00,
+  price_cents: 2600,
   locale: 'en')
 # . . .
 
@@ -53,7 +53,7 @@ Product.find_or_create_by(title: 'Ruby Performance Optimization',
       will run orders of magnitude faster.
       </p>},
   image_url: 'adrpo.jpg',
-  price: 46.00,
+  price_cents: 4600,
   locale: 'en')
 
 Product.find_or_create_by(title: 'Libro numero 1 en español',
@@ -70,7 +70,7 @@ Product.find_or_create_by(title: 'Libro numero 1 en español',
       tecnologías de manera efectiva en un entorno Ruby on Rails.
       </p>},
   image_url: 'lorem.jpg',
-  price: 55.00,
+  price_cents: 5500,
   locale: 'es')
 
 Product.find_or_create_by(title: 'Libro de español 2',
@@ -87,7 +87,7 @@ Product.find_or_create_by(title: 'Libro de español 2',
       e magnitud más rápido.
       </p>},
   image_url: 'dcbang.jpg',
-  price: 887.00,
+  price_cents: 88700,
   locale: 'es')
 
 PayType.find_or_create_by(name: 'Check')
