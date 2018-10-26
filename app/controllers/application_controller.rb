@@ -9,13 +9,6 @@ class ApplicationController < ActionController::Base
 
 	protected
 
-	# def authorize
-	# 	return if User.count.zero?
-	# 	unless User.find_by(id: session[:user_id])
-	# 		redirect_to login_url, notice: "Please log in"
-	# 	end
-	# end
-
 	def authorize
 		return if User.count.zero?
 		if request.format == Mime[:html]
@@ -39,6 +32,8 @@ class ApplicationController < ActionController::Base
 				flash.now[:notice] = "#{params[:locale]} translation not available"
 				logger.error flash.now[:notice]
 			end
+		else
+			I18n.locale = I18n.default_locale
 		end
 	end
 end
