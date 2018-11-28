@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 user = 'timsarom'
-domain = 'localhost'
+domain = 'nginx'
 
 set :application, "project"
 set :repo_url, "git@github.com:timsarom/project.git"
