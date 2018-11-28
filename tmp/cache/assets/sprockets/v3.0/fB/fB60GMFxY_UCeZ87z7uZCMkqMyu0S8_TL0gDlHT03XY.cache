@@ -1,0 +1,7 @@
+I"´(function() {
+  document.addEventListener('turbolinks:load', function() {
+    return document.getElementsById('submit_locale_change').style.display = 'none';
+  });
+
+}).call(this);
+:ET

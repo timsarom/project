@@ -1,0 +1,9 @@
+I"7(function() {
+  App.products = App.cable.subscriptions.create("ProductsChannel", {
+    connected: function() {},
+    disconnected: function() {},
+    received: function(data) {}
+  }, document.getElementsByTagName("main")[0].innerHTML = data.html, $("li.product").addClass('product-highlight'));
+
+}).call(this);
+:ET

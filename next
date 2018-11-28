@@ -1,0 +1,24 @@
+
+[1mFrom:[0m /home/timsarom/Desktop/project/test/system/orders_test.rb @ line 79 OrdersTest#test_perform_enqueued_job_for_ship_date:
+
+    [1;34m65[0m: test [31m[1;31m"[0m[31mperform enqueued job for ship date[1;31m"[0m[31m[0m [32mdo[0m
+    [1;34m66[0m: 	visit orders_path
+    [1;34m67[0m: 
+    [1;34m68[0m: 	fill_in [31m[1;31m'[0m[31mName:[1;31m'[0m[31m[0m, [35mwith[0m: [31m[1;31m"[0m[31mdave[1;31m"[0m[31m[0m
+    [1;34m69[0m: 	fill_in [31m[1;31m'[0m[31mPassword:[1;31m'[0m[31m[0m, [35mwith[0m: [31m[1;31m"[0m[31msecret[1;31m"[0m[31m[0m
+    [1;34m70[0m: 
+    [1;34m71[0m: 	click_button [31m[1;31m'[0m[31mLogin[1;31m'[0m[31m[0m
+    [1;34m72[0m: 
+    [1;34m73[0m: 	visit orders_path
+    [1;34m74[0m: 
+    [1;34m75[0m: 	perform_enqueued_jobs [32mdo[0m
+    [1;34m76[0m: 		click_on [31m[1;31m'[0m[31mShip[1;31m'[0m[31m[0m
+    [1;34m77[0m: 	[32mend[0m
+    [1;34m78[0m: 
+ => [1;34m79[0m: 	binding.pry
+    [1;34m80[0m: 
+    [1;34m81[0m: 	visit store_index_url
+    [1;34m82[0m: 
+    [1;34m83[0m: 	assert_equal [1;34m1[0m, enqueued_jobs.size
+    [1;34m84[0m: [32mend[0m
+

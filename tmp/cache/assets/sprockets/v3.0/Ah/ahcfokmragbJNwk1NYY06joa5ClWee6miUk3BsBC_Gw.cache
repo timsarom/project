@@ -1,0 +1,11 @@
+I"F(function() {
+  App.products = App.cable.subscriptions.create("ProductsChannel", {
+    connected: function() {},
+    disconnected: function() {},
+    received: function(data) {
+      return $("product").addClass("product-highlight", document.getElementsByTagName("main")[0].innerHTML = data.html);
+    }
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,12 @@
+<% if line_item == @current_item %>
+<tr class="line-item-highlight">
+<% else %>
+<tr>
+<% end %>
+	<td class="quantity"><%= line_item.quantity %></td>
+	<td><%= line_item.product.title %></td>
+	<td class="price"><%= converted_price(line_item.total_price) %></td>
+	<% unless @for_email %>
+	<td><%= button_to t('.delete'), {:controller => :line_items, :action => 'destroy', :id => line_item.id }, method: :delete, remote: true %></td>
+	<% end %>
+</tr>

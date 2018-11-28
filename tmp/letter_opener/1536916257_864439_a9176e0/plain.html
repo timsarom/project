@@ -1,0 +1,221 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+      <title>[PREFIX] products#show (RuntimeError) &quot;error&quot;</title>
+    
+
+    <style type="text/css">
+      #container {
+        margin: 10px auto;
+      }
+      #message_headers {
+        background: #fff;
+        font-size: 12px;
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 10px;
+        overflow: auto;
+      }
+
+      #message_headers dl {
+        float: left;
+        line-height: 1.3em;
+        padding: 0;
+      }
+
+      #message_headers dt {
+        width: 92px;
+        margin: 0;
+        float: left;
+        text-align: right;
+        font-weight: bold;
+        color: #7f7f7f;
+      }
+
+      #message_headers dd {
+        margin: 0 0 0 102px;
+      }
+
+      #message_headers p.alternate {
+        float: right;
+        margin: 0;
+      }
+
+      #message_headers p.alternate a {
+        color: #09c;
+      }
+
+      pre#message_body {
+        padding: 4px;
+        white-space: pre-wrap;
+        border: 1px solid #eee;
+        background-color: #fcfcfc;
+      }
+
+      iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="message_headers">
+        <dl>
+          <dt>From:</dt>
+          <dd>notifier &lt;notifier@example.com&gt;</dd>
+
+          
+
+          
+
+          
+            <dt>Subject:</dt>
+            <dd><strong>[PREFIX] products#show (RuntimeError) &quot;error&quot;</strong></dd>
+          
+
+          <dt>Date:</dt>
+          <dd>Sep 14, 2018 12:10:57 PM FLE Daylight Time</dd>
+
+          
+            <dt>To:</dt>
+            <dd>notifier@example.com</dd>
+          
+
+          
+
+          
+
+          
+        </dl>
+
+        
+      </div>
+
+      
+        <pre id="message_body">A RuntimeError occurred in products#show:
+
+  error
+  app/controllers/products_controller.rb:14:in `show&#39;
+
+
+-------------------------------
+Request:
+-------------------------------
+
+  * URL        : <a href="http://localhost:3000/products/1">http://localhost:3000/products/1</a>
+  * HTTP Method: GET
+  * IP address : 127.0.0.1
+  * Parameters : {&quot;controller&quot;=&gt;&quot;products&quot;, &quot;action&quot;=&gt;&quot;show&quot;, &quot;id&quot;=&gt;&quot;1&quot;}
+  * Timestamp  : 2018-09-14 09:10:57 UTC
+  * Server : WL313576
+  * Rails root : c:/Ruby/msys64/home/project
+  * Process: 7060
+
+-------------------------------
+Session:
+-------------------------------
+
+  * session id: &quot;cd7ec5bc910a8f3c923e0347bf6c8ecf&quot;
+  * data: {&quot;session_id&quot;=&gt;&quot;cd7ec5bc910a8f3c923e0347bf6c8ecf&quot;,
+   &quot;_csrf_token&quot;=&gt;&quot;BHBxG73m8Qx//VLsnNIqB9KWq4d0lha8OliKT4B2JoI=&quot;,
+   &quot;counter&quot;=&gt;1,
+   &quot;cart_id&quot;=&gt;139}
+
+-------------------------------
+Environment:
+-------------------------------
+
+  * GATEWAY_INTERFACE                              : CGI/1.2
+  * HTTP_ACCEPT                                    : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+  * HTTP_ACCEPT_ENCODING                           : gzip, deflate, br
+  * HTTP_ACCEPT_LANGUAGE                           : en-US,en;q=0.9
+  * HTTP_CONNECTION                                : keep-alive
+  * HTTP_COOKIE                                    : _meginajums_session=ajRORjV1ektORTRqajBmZ3R4dUdaeGkxdDVoVmlDQUcrd095QS9PSUNpWmd2R3VCUUFNTytGZGxoMXhIRElmaTgxckdZbnpDWHlZeTNFVFc4VkVhREdCWTJXeHFwb0FLSDBuWGdFeWllNHBCLzI5d1NZOGJGNXJlSUdsK1JYT2ZrdU9yZyszd0JieFc3R1g3NE1zYW93PT0tLStYSEgwcnhZeWo4Tm1zNkFKUCtneHc9PQ%3D%3D--b0245df8f18f098d3f221ee79cbd8d5f078c1475; _blogs_session=eGJBVHBWV0JQUE5mcTV0U29PK29qenlSY3gxSWQ3aGY4T3lpVUhtTXFWMEdqc0JQajZQRzdrOXdTMzhFTGtVOHRpYnlUbnQwczlydUZXYkczWVdiTlprMTZZU3Q2dld4OS9PTDBNU0puamp6U0FuTEtEUnhFM25FaDZ2N2ZaaysvWUFwNml1TFhNRVVMRG1CWThpZUZRcEFUYTRJVExFMHZXZlhSRjhjdXVyOXh1WXVwUzVVYUE0L2xmSzlCRnVWYzBjNWV1ams1d3dNZjUzd0Z0MFhxYnpUMEVKL09GUkppdlU3UFY5OGI4eE9MTDM3a2FFb2hrcXJrQ0Y1bmpGbG1BaE5aN0pJR2FpeHJsbU5BenZaU1E9PS0tSG9NWnNzUmwrZzVTQ1NvNEdtbllWZz09--f8c20ef3392d5364d2ff794fca47b280b57ae963; _mansblogs_session=SUlWdE91anZmNWFQcnkxT2tzR2J4U3l2enlMNERBTEdWVVZEUUpzYlBrZlZmVTRSVlprbUpldW5adm5zSzFabi9VckdVNGRqZHRDOXZyVHpIS3pzVmJYOFBKa3RsYzR0ZTJESG40c2FDZTVycHNQNTFldjVtNXFUSmgvZHVwTDdnR0x1Zjh2NUJ4UnQxRTl1V3Nxd1BRPT0tLTNOSHdOS29hK1ZMUHErbzNQdnk2Qnc9PQ%3D%3D--04fa3206459fb723cdd935d996ec592d2155f396; _twittter_session=L1V4WTdtT3AxM2ROaGQvL0pjQk52a093YlU2WEVwNm5ZZ01jSGRHWjhHTnFqcEd4YlpmcEliYmNQakZ3YWhrb28yd3o4VHdqMmZ1LzZ0Z2FjZVV0QncwZjZ6eDBrRFFrTitDUElLek5DZVo3ZkVEYmxBbys5NnZMOXdlelBsMnIwUzExclFuMWdxNzhEdTdDM0ZxR2hBPT0tLWlqbkpHMEgveDk3dkphT3l1T3I2b3c9PQ%3D%3D--69823194e795e7f1bd3018431cf89d51cf11f8e3; _depot_session=QkNueEpuTkdGSEVwa3pDWXZlbzNVRXJOdVppbkVpamxpQ3ZSWEtHMnlsTEd0cDZLK2hvRVowMllqbksreGVOMGJmV2N0ZC90OU8rMnZqamlLelBsOTJZNEtrZk5pdmZRMjBDZ0pnWk5La3hRTEZQaEl4eFMwczJHOXk0WWYvSmNvZm9Sb3c4ZGpVa2FHLzV6R0hSWmR2cTgxVHp0Y3JTdUNQTDE5R2xHbTFmRGRFUTFObkJSL1dmUkl2Qyt6SzhjLS1PSTZFdVJGcmNCVzdNUk1rbElMZDdnPT0%3D--803cc5d33a026c0ab05bd27a5907a6d0d9e5c9d9; _demo_session=UXA2d2orVnlWVkdJVEVnNlJ3ZXBSM0lrVkE3em1UM0xONnFqQTgxck1STFFieW1WaTJlVW04ZlZIVjBLemhxbXJvaDF3OVRPVTlTSDdSeW9mNUp5aEZlVWd6SHh0TDRtQlhVS2g5MmRqLzV1bFdNRjl4eUNuYXJhTGdLSW8yMXFDV29SbWdYMWgzTGpQMnVDUmxxbnJRPT0tLVN5N2tNaTEwalgvd3IyRlkxZFB3QkE9PQ%3D%3D--9bc6e8acc6cd31693a7f7da8278455b09f80bf5d; _project_session=T2FsemhOOWRwOU9DbmNjZkNVVkg0MEx5NDlzVXFzSHBaQ0sxYzBvdnkyS2ViNzlnbVl3QS9MZXdNdnNJRmxRWFNvZWtCUW9mV0dXNDlJWVMyODFwTEpnSzQ2WDUzaGlrVTk2c2FKVFh2cWlJWktHbk43MFVFM211bkw0NUdQUFFKbnRxdk1UM05WMzFXNytFMFJFRmNucEkrQjFLZVZSMkEzQWZhRmZQSS9VTDkrVjVRVkxxblBTdG1vcFhMYzNjLS1XN3NUOTFtL3RHZDN1RE5lbmlXODN3PT0%3D--65884db55700fb3b11c9fd445cf80637d70a0b63
+  * HTTP_HOST                                      : localhost:3000
+  * HTTP_IF_NONE_MATCH                             : W/&quot;b82da062c6deb4b3d85d1441128613a3&quot;
+  * HTTP_PURPOSE                                   : prefetch
+  * HTTP_UPGRADE_INSECURE_REQUESTS                 : 1
+  * HTTP_USER_AGENT                                : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36
+  * HTTP_VERSION                                   : HTTP/1.1
+  * ORIGINAL_FULLPATH                              : /products/1
+  * ORIGINAL_SCRIPT_NAME                           : 
+  * PATH_INFO                                      : /products/1
+  * QUERY_STRING                                   : 
+  * REMOTE_ADDR                                    : 127.0.0.1
+  * REQUEST_METHOD                                 : GET
+  * REQUEST_PATH                                   : /products/1
+  * REQUEST_URI                                    : /products/1
+  * ROUTES_65501300_SCRIPT_NAME                    : 
+  * SCRIPT_NAME                                    : 
+  * SERVER_NAME                                    : localhost
+  * SERVER_PORT                                    : 3000
+  * SERVER_PROTOCOL                                : HTTP/1.1
+  * SERVER_SOFTWARE                                : puma 3.12.0 Llamas in Pajamas
+  * action_controller.instance                     : #&lt;ProductsController:0x000000000c8ca170&gt;
+  * action_dispatch.backtrace_cleaner              : #&lt;Rails::BacktraceCleaner:0x0000000008b28fd8&gt;
+  * action_dispatch.cookies                        : #&lt;ActionDispatch::Cookies::CookieJar:0x000000000c83b5d8&gt;
+  * action_dispatch.cookies_digest                 : 
+  * action_dispatch.cookies_serializer             : json
+  * action_dispatch.encrypted_cookie_salt          : encrypted cookie
+  * action_dispatch.encrypted_signed_cookie_salt   : signed encrypted cookie
+  * action_dispatch.http_auth_salt                 : http authentication
+  * action_dispatch.key_generator                  : #&lt;ActiveSupport::CachingKeyGenerator:0x0000000008d047a8&gt;
+  * action_dispatch.logger                         : #&lt;ActiveSupport::Logger:0x0000000007b278f0&gt;
+  * action_dispatch.parameter_filter               : [:password]
+  * action_dispatch.redirect_filter                : []
+  * action_dispatch.remote_ip                      : 127.0.0.1
+  * action_dispatch.request.content_type           : 
+  * action_dispatch.request.formats                : [#&lt;Mime::Type:0x00000000065bb0e8 @synonyms=[&quot;application/xhtml+xml&quot;], @symbol=:html, @string=&quot;text/html&quot;, @hash=218606555&gt;]
+  * action_dispatch.request.parameters             : {&quot;controller&quot;=&gt;&quot;products&quot;, &quot;action&quot;=&gt;&quot;show&quot;, &quot;id&quot;=&gt;&quot;1&quot;}
+  * action_dispatch.request.path_parameters        : {:controller=&gt;&quot;products&quot;, :action=&gt;&quot;show&quot;, :id=&gt;&quot;1&quot;}
+  * action_dispatch.request.query_parameters       : {}
+  * action_dispatch.request.request_parameters     : {}
+  * action_dispatch.request.unsigned_session_cookie: {&quot;session_id&quot;=&gt;&quot;cd7ec5bc910a8f3c923e0347bf6c8ecf&quot;, &quot;_csrf_token&quot;=&gt;&quot;BHBxG73m8Qx//VLsnNIqB9KWq4d0lha8OliKT4B2JoI=&quot;, &quot;counter&quot;=&gt;1, &quot;cart_id&quot;=&gt;139}
+  * action_dispatch.request_id                     : 65d6b097-71be-4452-8574-7fcd54e10478
+  * action_dispatch.routes                         : #&lt;ActionDispatch::Routing::RouteSet:0x0000000007cef0e8&gt;
+  * action_dispatch.secret_key_base                : 247ca05e29b1cce86edd76dbddcc9213bacf1c6f72a637d7af82c2f38840a824f24b7be790c33adc4e8fc0b0837ce0342196d52732345548b07abec88b1e50e6
+  * action_dispatch.secret_token                   : 
+  * action_dispatch.show_detailed_exceptions       : true
+  * action_dispatch.show_exceptions                : true
+  * action_dispatch.signed_cookie_salt             : signed cookie
+  * puma.config                                    : #&lt;Puma::Configuration:0x0000000008bc6ee0&gt;
+  * puma.socket                                    : #&lt;TCPSocket:0x000000000ef04a48&gt;
+  * rack.after_reply                               : []
+  * rack.errors                                    : #&lt;IO:0x000000000477eb48&gt;
+  * rack.hijack                                    : #&lt;Puma::Client:0x000000000ef04a20&gt;
+  * rack.hijack?                                   : true
+  * rack.input                                     : #&lt;Puma::NullIO:0x0000000008cc71a0&gt;
+  * rack.multiprocess                              : false
+  * rack.multithread                               : true
+  * rack.request.cookie_hash                       : {&quot;_meginajums_session&quot;=&gt;&quot;ajRORjV1ektORTRqajBmZ3R4dUdaeGkxdDVoVmlDQUcrd095QS9PSUNpWmd2R3VCUUFNTytGZGxoMXhIRElmaTgxckdZbnpDWHlZeTNFVFc4VkVhREdCWTJXeHFwb0FLSDBuWGdFeWllNHBCLzI5d1NZOGJGNXJlSUdsK1JYT2ZrdU9yZyszd0JieFc3R1g3NE1zYW93PT0tLStYSEgwcnhZeWo4Tm1zNkFKUCtneHc9PQ==--b0245df8f18f098d3f221ee79cbd8d5f0...
+  * rack.request.cookie_string                     : _meginajums_session=ajRORjV1ektORTRqajBmZ3R4dUdaeGkxdDVoVmlDQUcrd095QS9PSUNpWmd2R3VCUUFNTytGZGxoMXhIRElmaTgxckdZbnpDWHlZeTNFVFc4VkVhREdCWTJXeHFwb0FLSDBuWGdFeWllNHBCLzI5d1NZOGJGNXJlSUdsK1JYT2ZrdU9yZyszd0JieFc3R1g3NE1zYW93PT0tLStYSEgwcnhZeWo4Tm1zNkFKUCtneHc9PQ%3D%3D--b0245df8f18f098d3f221ee79cbd8d5f078c1475; _blogs_session=eGJBVHBWV0JQUE5mcTV0U29PK29qenlSY3gxSWQ3aGY4T3lpVUhtTXFWMEdqc0JQajZQRzdrOXdTMzhFTGtVOHRpYnlUbnQwczlydUZXYkczWVdiTlprMTZZU3Q2dld4OS9PTDBNU0puamp6U0FuTEtEUnhFM25FaDZ2N2ZaaysvWUFwNml1TFhNRVVMRG1CWThpZUZRcEFUYTRJVExFMHZXZlhSRjhjdXVyOXh1WXVwUzVVYUE0L2xmSzlCRnVWYzBjNWV1ams1d3dNZjUzd0Z0MFhxYnpUMEVKL09GUkppdlU3UFY5OGI4eE9MTDM3a2FFb2hrcXJrQ0Y1bmpGbG1BaE5aN0pJR2FpeHJsbU5BenZaU1E9PS0tSG9NWnNzUmwrZzVTQ1NvNEdtbllWZz09--f8c20ef3392d5364d2ff794fca47b280b57ae963; _mansblogs_session=SUlWdE91anZmNWFQcnkxT2tzR2J4U3l2enlMNERBTEdWVVZEUUpzYlBrZlZmVTRSVlprbUpldW5adm5zSzFabi9VckdVNGRqZHRDOXZyVHpIS3pzVmJYOFBKa3RsYzR0ZTJESG40c2FDZTVycHNQNTFldjVtNXFUSmgvZHVwTDdnR0x1Zjh2NUJ4UnQxRTl1V3Nxd1BRPT0tLTNOSHdOS29hK1ZMUHErbzNQdnk2Qnc9PQ%3D%3D--04fa3206459fb723cdd935d996ec592d2155f396; _twittter_session=L1V4WTdtT3AxM2ROaGQvL0pjQk52a093YlU2WEVwNm5ZZ01jSGRHWjhHTnFqcEd4YlpmcEliYmNQakZ3YWhrb28yd3o4VHdqMmZ1LzZ0Z2FjZVV0QncwZjZ6eDBrRFFrTitDUElLek5DZVo3ZkVEYmxBbys5NnZMOXdlelBsMnIwUzExclFuMWdxNzhEdTdDM0ZxR2hBPT0tLWlqbkpHMEgveDk3dkphT3l1T3I2b3c9PQ%3D%3D--69823194e795e7f1bd3018431cf89d51cf11f8e3; _depot_session=QkNueEpuTkdGSEVwa3pDWXZlbzNVRXJOdVppbkVpamxpQ3ZSWEtHMnlsTEd0cDZLK2hvRVowMllqbksreGVOMGJmV2N0ZC90OU8rMnZqamlLelBsOTJZNEtrZk5pdmZRMjBDZ0pnWk5La3hRTEZQaEl4eFMwczJHOXk0WWYvSmNvZm9Sb3c4ZGpVa2FHLzV6R0hSWmR2cTgxVHp0Y3JTdUNQTDE5R2xHbTFmRGRFUTFObkJSL1dmUkl2Qyt6SzhjLS1PSTZFdVJGcmNCVzdNUk1rbElMZDdnPT0%3D--803cc5d33a026c0ab05bd27a5907a6d0d9e5c9d9; _demo_session=UXA2d2orVnlWVkdJVEVnNlJ3ZXBSM0lrVkE3em1UM0xONnFqQTgxck1STFFieW1WaTJlVW04ZlZIVjBLemhxbXJvaDF3OVRPVTlTSDdSeW9mNUp5aEZlVWd6SHh0TDRtQlhVS2g5MmRqLzV1bFdNRjl4eUNuYXJhTGdLSW8yMXFDV29SbWdYMWgzTGpQMnVDUmxxbnJRPT0tLVN5N2tNaTEwalgvd3IyRlkxZFB3QkE9PQ%3D%3D--9bc6e8acc6cd31693a7f7da8278455b09f80bf5d; _project_session=T2FsemhOOWRwOU9DbmNjZkNVVkg0MEx5NDlzVXFzSHBaQ0sxYzBvdnkyS2ViNzlnbVl3QS9MZXdNdnNJRmxRWFNvZWtCUW9mV0dXNDlJWVMyODFwTEpnSzQ2WDUzaGlrVTk2c2FKVFh2cWlJWktHbk43MFVFM211bkw0NUdQUFFKbnRxdk1UM05WMzFXNytFMFJFRmNucEkrQjFLZVZSMkEzQWZhRmZQSS9VTDkrVjVRVkxxblBTdG1vcFhMYzNjLS1XN3NUOTFtL3RHZDN1RE5lbmlXODN3PT0%3D--65884db55700fb3b11c9fd445cf80637d70a0b63
+  * rack.request.query_hash                        : {}
+  * rack.request.query_string                      : 
+  * rack.run_once                                  : false
+  * rack.session                                   : #&lt;ActionDispatch::Request::Session:0x000000000cbfc8e8&gt;
+  * rack.session.options                           : #&lt;ActionDispatch::Request::Session::Options:0x000000000cbfc730&gt;
+  * rack.url_scheme                                : http
+  * rack.version                                   : [1, 3]
+
+-------------------------------
+Backtrace:
+-------------------------------
+
+  app/controllers/products_controller.rb:14:in `show&#39;
+
+
+</pre>
+      
+    </div>
+
+    <script type="text/javascript">
+      /*! srcdoc-polyfill - v0.1.1 - 2013-03-01
+      * http://github.com/jugglinmike/srcdoc-polyfill/
+      * Copyright (c) 2013 Mike Pennisi; Licensed MIT */
+      (function(t,e){var c,n,o=t.srcDoc,r=!!("srcdoc"in e.createElement("iframe")),i={compliant:function(t,e){e&&t.setAttribute("srcdoc",e)},legacy:function(t,e){var c;t&&t.getAttribute&&(e?t.setAttribute("srcdoc",e):e=t.getAttribute("srcdoc"),e&&(c="javascript: window.frameElement.getAttribute('srcdoc');",t.setAttribute("src",c),t.contentWindow&&(t.contentWindow.location=c)))}},s=t.srcDoc={set:i.compliant,noConflict:function(){return t.srcDoc=o,s}};if(!r)for(s.set=i.legacy,n=e.getElementsByTagName("iframe"),c=n.length;c--;)s.set(n[c])})(this,this.document);
+    </script>
+  </body>
+</html>
