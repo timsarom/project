@@ -1,6 +1,9 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
 
+user = 'timsarom'
+domain = 'localhost'
+
 set :application, "project"
 set :repo_url, "git@github.com:timsarom/project.git"
 
@@ -12,6 +15,10 @@ set :deploy_to, "/home/timsarom/project"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
+
+role :app, domain
+role :web, domain
+role :db, domain
 
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
@@ -37,11 +44,3 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/syst
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
-
-namespace :deploy do
-	desc ‘Restart application’
-	task :restart do
-		invoke ‘unicorn:restart’
-	end
-end
-after ‘deploy:publishing’, ‘deploy:restart’
