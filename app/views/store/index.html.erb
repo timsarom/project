@@ -5,10 +5,10 @@
 <h1><%= t('.title_html') %></h1>
 <%= @visits %>
 <ul class="catalog">
-	<% #cache @products do %>
+	<% cache @products do %>
 		<% @products.each do |product| %>
 			 <% if product.locale == I18n.locale.to_s %>
-				<% #cache product do %>
+				<% cache product do %>
 					<li class="<%=product.id%>">
 						<%= link_to image_tag(product.image_url), { :controller => :line_items, :action => :create, product_id: product }, :method => :post %>
 						<h2><%= product.title %></h2>
@@ -20,8 +20,8 @@
 							<%= button_to t('.add_html'), line_items_path(product_id: product, locale: I18n.locale), remote: true %>
 						</div>
 					</li>
-				<% #end %>
+				<% end %>
 			<% end %>
 		<% end %>
-	<% #end %>
+	<% end %>
 </ul>
