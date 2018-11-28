@@ -4853,3 +4853,1039 @@ F, [2018-11-28T13:15:15.937568 #2859] FATAL -- : [2050184a-151c-4dbf-bc9f-928ff1
 [2050184a-151c-4dbf-bc9f-928ff12ba451] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
 [2050184a-151c-4dbf-bc9f-928ff12ba451] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
 [2050184a-151c-4dbf-bc9f-928ff12ba451] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:00:01.248676 #2861]  INFO -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0] Started GET "/" for 127.0.0.1 at 2018-11-28 14:00:01 +0200
+I, [2018-11-28T14:00:01.250477 #2861]  INFO -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0] Processing by StoreController#index as HTML
+D, [2018-11-28T14:00:01.251790 #2861] DEBUG -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = NULL LIMIT 1[0m
+D, [2018-11-28T14:00:01.252342 #2861] DEBUG -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-11-28T14:00:01.258585 #2861] DEBUG -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0]   [1m[35mSQL (3.4ms)[0m  [1m[32mINSERT INTO `carts` (`created_at`, `updated_at`) VALUES ('2018-11-28 12:00:01', '2018-11-28 12:00:01')[0m
+D, [2018-11-28T14:00:01.264826 #2861] DEBUG -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0]   [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-11-28T14:00:01.265471 #2861]  INFO -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T14:00:01.266377 #2861] DEBUG -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0]   [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T14:00:01.274013 #2861]  INFO -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0]   Rendered store/index.html.erb within layouts/application (8.4ms)
+D, [2018-11-28T14:00:01.279110 #2861] DEBUG -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0]   [1m[36mLineItem Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:00:01.279722 #2861]  INFO -- : [959f9ce1-0c64-4cd7-a279-c61def50b1a0] Completed 200 OK in 29ms (Views: 12.5ms | ActiveRecord: 10.5ms)
+I, [2018-11-28T14:00:01.430168 #2859]  INFO -- : [e25d0885-dd4e-40c5-8f1e-493840e74fcf] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:00:01 +0200
+F, [2018-11-28T14:00:01.431081 #2859] FATAL -- : [e25d0885-dd4e-40c5-8f1e-493840e74fcf]   
+F, [2018-11-28T14:00:01.431123 #2859] FATAL -- : [e25d0885-dd4e-40c5-8f1e-493840e74fcf] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:00:01.431143 #2859] FATAL -- : [e25d0885-dd4e-40c5-8f1e-493840e74fcf]   
+F, [2018-11-28T14:00:01.431169 #2859] FATAL -- : [e25d0885-dd4e-40c5-8f1e-493840e74fcf] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[e25d0885-dd4e-40c5-8f1e-493840e74fcf] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:00:05.134273 #2859]  INFO -- : [1adb8302-e272-4283-9178-8ed360fa44c5] Started POST "/" for 127.0.0.1 at 2018-11-28 14:00:05 +0200
+I, [2018-11-28T14:00:05.135015 #2859]  INFO -- : [1adb8302-e272-4283-9178-8ed360fa44c5] Processing by StoreController#index as HTML
+I, [2018-11-28T14:00:05.135058 #2859]  INFO -- : [1adb8302-e272-4283-9178-8ed360fa44c5]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"nmvxQF+E1CZdH435T5mLRb/UiMqCx+8ynFkq8T1E/dBpq9tD6u55dqHgl6FWZeWiUNO01rIEYocDzMxpPEFasg==", "set_locale"=>"es"}
+D, [2018-11-28T14:00:05.136148 #2859] DEBUG -- : [1adb8302-e272-4283-9178-8ed360fa44c5]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:00:05.136539 #2859]  INFO -- : [1adb8302-e272-4283-9178-8ed360fa44c5] Redirected to http://localhost/es
+I, [2018-11-28T14:00:05.136697 #2859]  INFO -- : [1adb8302-e272-4283-9178-8ed360fa44c5] Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+I, [2018-11-28T14:00:05.161709 #2861]  INFO -- : [8b8a8a20-cdb5-40d3-93db-3e87368f441b] Started GET "/es" for 127.0.0.1 at 2018-11-28 14:00:05 +0200
+I, [2018-11-28T14:00:05.162692 #2861]  INFO -- : [8b8a8a20-cdb5-40d3-93db-3e87368f441b] Processing by StoreController#index as HTML
+I, [2018-11-28T14:00:05.162751 #2861]  INFO -- : [8b8a8a20-cdb5-40d3-93db-3e87368f441b]   Parameters: {"locale"=>"es"}
+D, [2018-11-28T14:00:05.163646 #2861] DEBUG -- : [8b8a8a20-cdb5-40d3-93db-3e87368f441b]   [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:00:05.164228 #2861]  INFO -- : [8b8a8a20-cdb5-40d3-93db-3e87368f441b]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T14:00:05.164883 #2861] DEBUG -- : [8b8a8a20-cdb5-40d3-93db-3e87368f441b]   [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T14:00:05.170763 #2861]  INFO -- : [8b8a8a20-cdb5-40d3-93db-3e87368f441b]   Rendered store/index.html.erb within layouts/application (6.4ms)
+D, [2018-11-28T14:00:05.175877 #2861] DEBUG -- : [8b8a8a20-cdb5-40d3-93db-3e87368f441b]   [1m[36mLineItem Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:00:05.176387 #2861]  INFO -- : [8b8a8a20-cdb5-40d3-93db-3e87368f441b] Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 2.5ms)
+I, [2018-11-28T14:00:05.282343 #2859]  INFO -- : [fccd467c-ef76-4c49-a34c-d9d815bb4d7d] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:00:05 +0200
+F, [2018-11-28T14:00:05.283319 #2859] FATAL -- : [fccd467c-ef76-4c49-a34c-d9d815bb4d7d]   
+F, [2018-11-28T14:00:05.283369 #2859] FATAL -- : [fccd467c-ef76-4c49-a34c-d9d815bb4d7d] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:00:05.283393 #2859] FATAL -- : [fccd467c-ef76-4c49-a34c-d9d815bb4d7d]   
+F, [2018-11-28T14:00:05.283423 #2859] FATAL -- : [fccd467c-ef76-4c49-a34c-d9d815bb4d7d] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[fccd467c-ef76-4c49-a34c-d9d815bb4d7d] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:00:06.781883 #2859]  INFO -- : [e55602f1-cf26-43bf-aefd-b5ee1230706a] Started POST "/" for 127.0.0.1 at 2018-11-28 14:00:06 +0200
+I, [2018-11-28T14:00:06.782694 #2859]  INFO -- : [e55602f1-cf26-43bf-aefd-b5ee1230706a] Processing by StoreController#index as HTML
+I, [2018-11-28T14:00:06.782742 #2859]  INFO -- : [e55602f1-cf26-43bf-aefd-b5ee1230706a]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4Ea1QXDppEFlQ/vNCnYqKXGyZzTrzTv10DEZq3odkdgQTDWsKkLwflqFbct1bZPSsH1gONsuVpI1SL+rO3RJQ==", "set_locale"=>"en"}
+D, [2018-11-28T14:00:06.783635 #2859] DEBUG -- : [e55602f1-cf26-43bf-aefd-b5ee1230706a]   [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:00:06.783986 #2859]  INFO -- : [e55602f1-cf26-43bf-aefd-b5ee1230706a] Redirected to http://localhost/en
+I, [2018-11-28T14:00:06.784122 #2859]  INFO -- : [e55602f1-cf26-43bf-aefd-b5ee1230706a] Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+I, [2018-11-28T14:00:06.833842 #2861]  INFO -- : [85d3d58b-acd7-4de3-99dd-48348f701317] Started GET "/en" for 127.0.0.1 at 2018-11-28 14:00:06 +0200
+I, [2018-11-28T14:00:06.834719 #2861]  INFO -- : [85d3d58b-acd7-4de3-99dd-48348f701317] Processing by StoreController#index as HTML
+I, [2018-11-28T14:00:06.834772 #2861]  INFO -- : [85d3d58b-acd7-4de3-99dd-48348f701317]   Parameters: {"locale"=>"en"}
+D, [2018-11-28T14:00:06.835782 #2861] DEBUG -- : [85d3d58b-acd7-4de3-99dd-48348f701317]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:00:06.836411 #2861]  INFO -- : [85d3d58b-acd7-4de3-99dd-48348f701317]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T14:00:06.837518 #2861] DEBUG -- : [85d3d58b-acd7-4de3-99dd-48348f701317]   [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T14:00:06.850507 #2861]  INFO -- : [85d3d58b-acd7-4de3-99dd-48348f701317]   Rendered store/index.html.erb within layouts/application (14.0ms)
+D, [2018-11-28T14:00:06.857220 #2861] DEBUG -- : [85d3d58b-acd7-4de3-99dd-48348f701317]   [1m[36mLineItem Exists (5.1ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:00:06.857741 #2861]  INFO -- : [85d3d58b-acd7-4de3-99dd-48348f701317] Completed 200 OK in 23ms (Views: 15.6ms | ActiveRecord: 6.1ms)
+I, [2018-11-28T14:00:06.979196 #2859]  INFO -- : [5639cb94-af66-44a6-98cf-51327e75a9d4] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:00:06 +0200
+F, [2018-11-28T14:00:06.980183 #2859] FATAL -- : [5639cb94-af66-44a6-98cf-51327e75a9d4]   
+F, [2018-11-28T14:00:06.980234 #2859] FATAL -- : [5639cb94-af66-44a6-98cf-51327e75a9d4] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:00:06.980258 #2859] FATAL -- : [5639cb94-af66-44a6-98cf-51327e75a9d4]   
+F, [2018-11-28T14:00:06.980485 #2859] FATAL -- : [5639cb94-af66-44a6-98cf-51327e75a9d4] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[5639cb94-af66-44a6-98cf-51327e75a9d4] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:01:13.327106 #2859]  INFO -- : [ba5edbaa-8bed-480f-baf1-0e61ae20f9f8] Started GET "/en" for 127.0.0.1 at 2018-11-28 14:01:13 +0200
+I, [2018-11-28T14:01:13.327955 #2859]  INFO -- : [ba5edbaa-8bed-480f-baf1-0e61ae20f9f8] Processing by StoreController#index as HTML
+I, [2018-11-28T14:01:13.327999 #2859]  INFO -- : [ba5edbaa-8bed-480f-baf1-0e61ae20f9f8]   Parameters: {"locale"=>"en"}
+D, [2018-11-28T14:01:13.328984 #2859] DEBUG -- : [ba5edbaa-8bed-480f-baf1-0e61ae20f9f8]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:01:13.329598 #2859]  INFO -- : [ba5edbaa-8bed-480f-baf1-0e61ae20f9f8]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T14:01:13.330279 #2859] DEBUG -- : [ba5edbaa-8bed-480f-baf1-0e61ae20f9f8]   [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T14:01:13.338529 #2859]  INFO -- : [ba5edbaa-8bed-480f-baf1-0e61ae20f9f8]   Rendered store/index.html.erb within layouts/application (8.9ms)
+D, [2018-11-28T14:01:13.343240 #2859] DEBUG -- : [ba5edbaa-8bed-480f-baf1-0e61ae20f9f8]   [1m[36mLineItem Exists (3.4ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:01:13.343956 #2859]  INFO -- : [ba5edbaa-8bed-480f-baf1-0e61ae20f9f8] Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 4.0ms)
+I, [2018-11-28T14:01:13.402431 #2861]  INFO -- : [a28eca8c-6371-4e4f-a7f0-be88726730bd] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:01:13 +0200
+F, [2018-11-28T14:01:13.403348 #2861] FATAL -- : [a28eca8c-6371-4e4f-a7f0-be88726730bd]   
+F, [2018-11-28T14:01:13.403383 #2861] FATAL -- : [a28eca8c-6371-4e4f-a7f0-be88726730bd] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:01:13.403403 #2861] FATAL -- : [a28eca8c-6371-4e4f-a7f0-be88726730bd]   
+F, [2018-11-28T14:01:13.403426 #2861] FATAL -- : [a28eca8c-6371-4e4f-a7f0-be88726730bd] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[a28eca8c-6371-4e4f-a7f0-be88726730bd] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:01:17.057455 #2861]  INFO -- : [1786a19a-df82-4132-8c81-2933d470adb4] Started POST "/" for 127.0.0.1 at 2018-11-28 14:01:17 +0200
+I, [2018-11-28T14:01:17.058621 #2861]  INFO -- : [1786a19a-df82-4132-8c81-2933d470adb4] Processing by StoreController#index as HTML
+I, [2018-11-28T14:01:17.058689 #2861]  INFO -- : [1786a19a-df82-4132-8c81-2933d470adb4]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"ILYjTTO8Ek2Fdo95keVdt2Ygf5Xb7V874J1YwwdJ6T3XdglOhta/HXmJlSGIGTNQiSdDiesu0o5/CL5bBkxOXw==", "set_locale"=>"es"}
+D, [2018-11-28T14:01:17.060033 #2861] DEBUG -- : [1786a19a-df82-4132-8c81-2933d470adb4]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:01:17.060733 #2861]  INFO -- : [1786a19a-df82-4132-8c81-2933d470adb4] Redirected to http://localhost/es
+I, [2018-11-28T14:01:17.060920 #2861]  INFO -- : [1786a19a-df82-4132-8c81-2933d470adb4] Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+I, [2018-11-28T14:01:17.085165 #2859]  INFO -- : [3f351630-849a-49cb-98df-35c7ca6fe9eb] Started GET "/es" for 127.0.0.1 at 2018-11-28 14:01:17 +0200
+I, [2018-11-28T14:01:17.085916 #2859]  INFO -- : [3f351630-849a-49cb-98df-35c7ca6fe9eb] Processing by StoreController#index as HTML
+I, [2018-11-28T14:01:17.085988 #2859]  INFO -- : [3f351630-849a-49cb-98df-35c7ca6fe9eb]   Parameters: {"locale"=>"es"}
+D, [2018-11-28T14:01:17.086818 #2859] DEBUG -- : [3f351630-849a-49cb-98df-35c7ca6fe9eb]   [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:01:17.087410 #2859]  INFO -- : [3f351630-849a-49cb-98df-35c7ca6fe9eb]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T14:01:17.088060 #2859] DEBUG -- : [3f351630-849a-49cb-98df-35c7ca6fe9eb]   [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T14:01:17.092847 #2859]  INFO -- : [3f351630-849a-49cb-98df-35c7ca6fe9eb]   Rendered store/index.html.erb within layouts/application (5.3ms)
+D, [2018-11-28T14:01:17.098059 #2859] DEBUG -- : [3f351630-849a-49cb-98df-35c7ca6fe9eb]   [1m[36mLineItem Exists (3.8ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:01:17.098622 #2859]  INFO -- : [3f351630-849a-49cb-98df-35c7ca6fe9eb] Completed 200 OK in 13ms (Views: 7.2ms | ActiveRecord: 4.3ms)
+I, [2018-11-28T14:01:17.186285 #2861]  INFO -- : [7d957dd8-7bce-4e80-a896-bd52c84943f6] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:01:17 +0200
+F, [2018-11-28T14:01:17.187194 #2861] FATAL -- : [7d957dd8-7bce-4e80-a896-bd52c84943f6]   
+F, [2018-11-28T14:01:17.187230 #2861] FATAL -- : [7d957dd8-7bce-4e80-a896-bd52c84943f6] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:01:17.187249 #2861] FATAL -- : [7d957dd8-7bce-4e80-a896-bd52c84943f6]   
+F, [2018-11-28T14:01:17.187272 #2861] FATAL -- : [7d957dd8-7bce-4e80-a896-bd52c84943f6] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[7d957dd8-7bce-4e80-a896-bd52c84943f6] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:01:18.155355 #2861]  INFO -- : [2f6d5e86-e6c3-4fde-8f6f-5149e93878f7] Started POST "/" for 127.0.0.1 at 2018-11-28 14:01:18 +0200
+I, [2018-11-28T14:01:18.156196 #2861]  INFO -- : [2f6d5e86-e6c3-4fde-8f6f-5149e93878f7] Processing by StoreController#index as HTML
+I, [2018-11-28T14:01:18.156247 #2861]  INFO -- : [2f6d5e86-e6c3-4fde-8f6f-5149e93878f7]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"HakCkLgM0BGusvPzRJZiTD2A+yW9IwLG2MG0z4yB0XTqaSiTDWZ9QVJN6atdagyr0ofHOY3gj3NHVFJXjYR2Fg==", "set_locale"=>"en"}
+D, [2018-11-28T14:01:18.157404 #2861] DEBUG -- : [2f6d5e86-e6c3-4fde-8f6f-5149e93878f7]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:01:18.157849 #2861]  INFO -- : [2f6d5e86-e6c3-4fde-8f6f-5149e93878f7] Redirected to http://localhost/en
+I, [2018-11-28T14:01:18.157975 #2861]  INFO -- : [2f6d5e86-e6c3-4fde-8f6f-5149e93878f7] Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+I, [2018-11-28T14:01:18.188631 #2859]  INFO -- : [3159b95a-ecf8-457d-886a-90fd047eedc7] Started GET "/en" for 127.0.0.1 at 2018-11-28 14:01:18 +0200
+I, [2018-11-28T14:01:18.189483 #2859]  INFO -- : [3159b95a-ecf8-457d-886a-90fd047eedc7] Processing by StoreController#index as HTML
+I, [2018-11-28T14:01:18.189527 #2859]  INFO -- : [3159b95a-ecf8-457d-886a-90fd047eedc7]   Parameters: {"locale"=>"en"}
+D, [2018-11-28T14:01:18.190476 #2859] DEBUG -- : [3159b95a-ecf8-457d-886a-90fd047eedc7]   [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:01:18.191110 #2859]  INFO -- : [3159b95a-ecf8-457d-886a-90fd047eedc7]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T14:01:18.192976 #2859] DEBUG -- : [3159b95a-ecf8-457d-886a-90fd047eedc7]   [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T14:01:18.211653 #2859]  INFO -- : [3159b95a-ecf8-457d-886a-90fd047eedc7]   Rendered store/index.html.erb within layouts/application (20.5ms)
+D, [2018-11-28T14:01:18.214962 #2859] DEBUG -- : [3159b95a-ecf8-457d-886a-90fd047eedc7]   [1m[36mLineItem Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:01:18.215413 #2859]  INFO -- : [3159b95a-ecf8-457d-886a-90fd047eedc7] Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 1.9ms)
+I, [2018-11-28T14:01:18.288871 #2861]  INFO -- : [fbd8ed4d-fe89-4c3d-9232-052500482bc3] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:01:18 +0200
+F, [2018-11-28T14:01:18.290538 #2861] FATAL -- : [fbd8ed4d-fe89-4c3d-9232-052500482bc3]   
+F, [2018-11-28T14:01:18.290608 #2861] FATAL -- : [fbd8ed4d-fe89-4c3d-9232-052500482bc3] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:01:18.290649 #2861] FATAL -- : [fbd8ed4d-fe89-4c3d-9232-052500482bc3]   
+F, [2018-11-28T14:01:18.290702 #2861] FATAL -- : [fbd8ed4d-fe89-4c3d-9232-052500482bc3] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[fbd8ed4d-fe89-4c3d-9232-052500482bc3] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:01:32.682039 #2861]  INFO -- : [78bee424-9bf8-4082-9075-19b467943fea] Started GET "/" for 127.0.0.1 at 2018-11-28 14:01:32 +0200
+I, [2018-11-28T14:01:32.683143 #2861]  INFO -- : [78bee424-9bf8-4082-9075-19b467943fea] Processing by StoreController#index as HTML
+D, [2018-11-28T14:01:32.684291 #2861] DEBUG -- : [78bee424-9bf8-4082-9075-19b467943fea]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:01:32.690629 #2861]  INFO -- : [78bee424-9bf8-4082-9075-19b467943fea]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T14:01:32.691838 #2861] DEBUG -- : [78bee424-9bf8-4082-9075-19b467943fea]   [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T14:01:32.696749 #2861]  INFO -- : [78bee424-9bf8-4082-9075-19b467943fea]   Rendered store/index.html.erb within layouts/application (5.9ms)
+D, [2018-11-28T14:01:32.709759 #2861] DEBUG -- : [78bee424-9bf8-4082-9075-19b467943fea]   [1m[36mLineItem Exists (2.8ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 22 LIMIT 1[0m
+I, [2018-11-28T14:01:32.710540 #2861]  INFO -- : [78bee424-9bf8-4082-9075-19b467943fea] Completed 200 OK in 27ms (Views: 22.4ms | ActiveRecord: 3.5ms)
+I, [2018-11-28T14:01:32.843137 #2859]  INFO -- : [d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:01:32 +0200
+F, [2018-11-28T14:01:32.844098 #2859] FATAL -- : [d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76]   
+F, [2018-11-28T14:01:32.844142 #2859] FATAL -- : [d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:01:32.844174 #2859] FATAL -- : [d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76]   
+F, [2018-11-28T14:01:32.844198 #2859] FATAL -- : [d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[d1fb4f1a-2bbd-4948-8126-6f6b2e40dd76] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:01:38.616785 #2859]  INFO -- : [90dfe53c-2edc-4813-a3e2-c20e016e32b2] Started GET "/products" for 127.0.0.1 at 2018-11-28 14:01:38 +0200
+I, [2018-11-28T14:01:38.617615 #2859]  INFO -- : [90dfe53c-2edc-4813-a3e2-c20e016e32b2] Processing by ProductsController#index as HTML
+D, [2018-11-28T14:01:38.618555 #2859] DEBUG -- : [90dfe53c-2edc-4813-a3e2-c20e016e32b2]   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+D, [2018-11-28T14:01:38.619178 #2859] DEBUG -- : [90dfe53c-2edc-4813-a3e2-c20e016e32b2]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+I, [2018-11-28T14:01:38.619685 #2859]  INFO -- : [90dfe53c-2edc-4813-a3e2-c20e016e32b2] Redirected to http://localhost/login
+I, [2018-11-28T14:01:38.619767 #2859]  INFO -- : [90dfe53c-2edc-4813-a3e2-c20e016e32b2] Filter chain halted as :authorize rendered or redirected
+I, [2018-11-28T14:01:38.619851 #2859]  INFO -- : [90dfe53c-2edc-4813-a3e2-c20e016e32b2] Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+I, [2018-11-28T14:01:38.633314 #2861]  INFO -- : [86eaba83-f71b-42f9-a706-ea59d34b4995] Started GET "/login" for 127.0.0.1 at 2018-11-28 14:01:38 +0200
+I, [2018-11-28T14:01:38.634181 #2861]  INFO -- : [86eaba83-f71b-42f9-a706-ea59d34b4995] Processing by SessionsController#new as HTML
+I, [2018-11-28T14:01:38.634822 #2861]  INFO -- : [86eaba83-f71b-42f9-a706-ea59d34b4995]   Rendering sessions/new.html.erb within layouts/application
+I, [2018-11-28T14:01:38.635363 #2861]  INFO -- : [86eaba83-f71b-42f9-a706-ea59d34b4995]   Rendered sessions/new.html.erb within layouts/application (0.5ms)
+I, [2018-11-28T14:01:38.636431 #2861]  INFO -- : [86eaba83-f71b-42f9-a706-ea59d34b4995] Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+I, [2018-11-28T14:01:38.715697 #2859]  INFO -- : [14d1c0ef-79a0-4185-8ef1-d685acda2324] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:01:38 +0200
+F, [2018-11-28T14:01:38.716585 #2859] FATAL -- : [14d1c0ef-79a0-4185-8ef1-d685acda2324]   
+F, [2018-11-28T14:01:38.716624 #2859] FATAL -- : [14d1c0ef-79a0-4185-8ef1-d685acda2324] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:01:38.716651 #2859] FATAL -- : [14d1c0ef-79a0-4185-8ef1-d685acda2324]   
+F, [2018-11-28T14:01:38.716674 #2859] FATAL -- : [14d1c0ef-79a0-4185-8ef1-d685acda2324] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[14d1c0ef-79a0-4185-8ef1-d685acda2324] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:01:43.730078 #2861]  INFO -- : [7f520195-cebe-4d75-be54-2ca6058bdd17] Started POST "/login" for 127.0.0.1 at 2018-11-28 14:01:43 +0200
+I, [2018-11-28T14:01:43.731332 #2861]  INFO -- : [7f520195-cebe-4d75-be54-2ca6058bdd17] Processing by SessionsController#create as HTML
+I, [2018-11-28T14:01:43.731406 #2861]  INFO -- : [7f520195-cebe-4d75-be54-2ca6058bdd17]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"R4IFSyBYwHTIg6aWBYNBblnSt/QTorym53opcWHqmMG9uZDEwvJJ8prL0/03MJ7Fbup9ibzp560b0p7RE6AhSw==", "name"=>"user", "password"=>"[FILTERED]", "commit"=>"Login"}
+D, [2018-11-28T14:01:43.733262 #2861] DEBUG -- : [7f520195-cebe-4d75-be54-2ca6058bdd17]   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+D, [2018-11-28T14:01:43.737802 #2861] DEBUG -- : [7f520195-cebe-4d75-be54-2ca6058bdd17]   [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`name` = 'user' LIMIT 1[0m
+I, [2018-11-28T14:01:43.868878 #2861]  INFO -- : [7f520195-cebe-4d75-be54-2ca6058bdd17] Redirected to http://localhost/admin
+I, [2018-11-28T14:01:43.869024 #2861]  INFO -- : [7f520195-cebe-4d75-be54-2ca6058bdd17] Completed 302 Found in 138ms (ActiveRecord: 4.7ms)
+I, [2018-11-28T14:01:43.886906 #2859]  INFO -- : [12055f20-a599-47b0-8cef-3b6ca31ef217] Started GET "/admin" for 127.0.0.1 at 2018-11-28 14:01:43 +0200
+I, [2018-11-28T14:01:43.887943 #2859]  INFO -- : [12055f20-a599-47b0-8cef-3b6ca31ef217] Processing by AdminController#index as HTML
+D, [2018-11-28T14:01:43.889111 #2859] DEBUG -- : [12055f20-a599-47b0-8cef-3b6ca31ef217]   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+D, [2018-11-28T14:01:43.889714 #2859] DEBUG -- : [12055f20-a599-47b0-8cef-3b6ca31ef217]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+D, [2018-11-28T14:01:43.893059 #2859] DEBUG -- : [12055f20-a599-47b0-8cef-3b6ca31ef217]   [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`ship_date` IS NULL[0m
+I, [2018-11-28T14:01:43.893532 #2859]  INFO -- : [12055f20-a599-47b0-8cef-3b6ca31ef217]   Rendering admin/index.html.erb within layouts/application
+I, [2018-11-28T14:01:43.893682 #2859]  INFO -- : [12055f20-a599-47b0-8cef-3b6ca31ef217]   Rendered admin/index.html.erb within layouts/application (0.1ms)
+I, [2018-11-28T14:01:43.895432 #2859]  INFO -- : [12055f20-a599-47b0-8cef-3b6ca31ef217] Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 3.0ms)
+I, [2018-11-28T14:01:44.020897 #2861]  INFO -- : [cd4600c3-c3aa-45ef-a184-e07877292046] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:01:44 +0200
+F, [2018-11-28T14:01:44.021892 #2861] FATAL -- : [cd4600c3-c3aa-45ef-a184-e07877292046]   
+F, [2018-11-28T14:01:44.021943 #2861] FATAL -- : [cd4600c3-c3aa-45ef-a184-e07877292046] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:01:44.021968 #2861] FATAL -- : [cd4600c3-c3aa-45ef-a184-e07877292046]   
+F, [2018-11-28T14:01:44.021997 #2861] FATAL -- : [cd4600c3-c3aa-45ef-a184-e07877292046] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[cd4600c3-c3aa-45ef-a184-e07877292046] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[cd4600c3-c3aa-45ef-a184-e07877292046] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[cd4600c3-c3aa-45ef-a184-e07877292046] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[cd4600c3-c3aa-45ef-a184-e07877292046] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[cd4600c3-c3aa-45ef-a184-e07877292046] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[cd4600c3-c3aa-45ef-a184-e07877292046] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[cd4600c3-c3aa-45ef-a184-e07877292046] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[cd4600c3-c3aa-45ef-a184-e07877292046] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[cd4600c3-c3aa-45ef-a184-e07877292046] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[cd4600c3-c3aa-45ef-a184-e07877292046] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[cd4600c3-c3aa-45ef-a184-e07877292046] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[cd4600c3-c3aa-45ef-a184-e07877292046] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[cd4600c3-c3aa-45ef-a184-e07877292046] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[cd4600c3-c3aa-45ef-a184-e07877292046] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:01:45.826448 #2861]  INFO -- : [77604bd7-6b7f-47f0-92f6-3aa6cebc9a2c] Started GET "/products" for 127.0.0.1 at 2018-11-28 14:01:45 +0200
+I, [2018-11-28T14:01:45.827503 #2861]  INFO -- : [77604bd7-6b7f-47f0-92f6-3aa6cebc9a2c] Processing by ProductsController#index as HTML
+D, [2018-11-28T14:01:45.828622 #2861] DEBUG -- : [77604bd7-6b7f-47f0-92f6-3aa6cebc9a2c]   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+D, [2018-11-28T14:01:45.829236 #2861] DEBUG -- : [77604bd7-6b7f-47f0-92f6-3aa6cebc9a2c]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+I, [2018-11-28T14:01:45.829990 #2861]  INFO -- : [77604bd7-6b7f-47f0-92f6-3aa6cebc9a2c]   Rendering products/index.html.erb within layouts/application
+D, [2018-11-28T14:01:45.832538 #2861] DEBUG -- : [77604bd7-6b7f-47f0-92f6-3aa6cebc9a2c]   [1m[36mProduct Load (2.1ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+I, [2018-11-28T14:01:45.836822 #2861]  INFO -- : [77604bd7-6b7f-47f0-92f6-3aa6cebc9a2c]   Rendered products/index.html.erb within layouts/application (6.7ms)
+I, [2018-11-28T14:01:45.843268 #2861]  INFO -- : [77604bd7-6b7f-47f0-92f6-3aa6cebc9a2c] Completed 200 OK in 16ms (Views: 11.4ms | ActiveRecord: 2.5ms)
+I, [2018-11-28T14:01:45.912940 #2859]  INFO -- : [ad98fcea-68fa-4062-aebe-bf027daeb73b] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:01:45 +0200
+F, [2018-11-28T14:01:45.913836 #2859] FATAL -- : [ad98fcea-68fa-4062-aebe-bf027daeb73b]   
+F, [2018-11-28T14:01:45.913886 #2859] FATAL -- : [ad98fcea-68fa-4062-aebe-bf027daeb73b] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:01:45.913906 #2859] FATAL -- : [ad98fcea-68fa-4062-aebe-bf027daeb73b]   
+F, [2018-11-28T14:01:45.913928 #2859] FATAL -- : [ad98fcea-68fa-4062-aebe-bf027daeb73b] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[ad98fcea-68fa-4062-aebe-bf027daeb73b] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:01:47.412280 #2859]  INFO -- : [ae644b27-5c14-453f-ad8f-8594ca8969cd] Started GET "/products/1/edit" for 127.0.0.1 at 2018-11-28 14:01:47 +0200
+I, [2018-11-28T14:01:47.413204 #2859]  INFO -- : [ae644b27-5c14-453f-ad8f-8594ca8969cd] Processing by ProductsController#edit as HTML
+I, [2018-11-28T14:01:47.413252 #2859]  INFO -- : [ae644b27-5c14-453f-ad8f-8594ca8969cd]   Parameters: {"id"=>"1"}
+D, [2018-11-28T14:01:47.414272 #2859] DEBUG -- : [ae644b27-5c14-453f-ad8f-8594ca8969cd]   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+D, [2018-11-28T14:01:47.414713 #2859] DEBUG -- : [ae644b27-5c14-453f-ad8f-8594ca8969cd]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+D, [2018-11-28T14:01:47.415360 #2859] DEBUG -- : [ae644b27-5c14-453f-ad8f-8594ca8969cd]   [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+I, [2018-11-28T14:01:47.415949 #2859]  INFO -- : [ae644b27-5c14-453f-ad8f-8594ca8969cd]   Rendering products/edit.html.erb within layouts/application
+I, [2018-11-28T14:01:47.423258 #2859]  INFO -- : [ae644b27-5c14-453f-ad8f-8594ca8969cd]   Rendered products/_form.html.erb (7.1ms)
+I, [2018-11-28T14:01:47.423546 #2859]  INFO -- : [ae644b27-5c14-453f-ad8f-8594ca8969cd]   Rendered products/edit.html.erb within layouts/application (7.5ms)
+I, [2018-11-28T14:01:47.426980 #2859]  INFO -- : [ae644b27-5c14-453f-ad8f-8594ca8969cd] Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.6ms)
+I, [2018-11-28T14:01:47.492905 #2861]  INFO -- : [3fc1f938-344a-49a7-95e9-6d348b5e166b] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:01:47 +0200
+F, [2018-11-28T14:01:47.493885 #2861] FATAL -- : [3fc1f938-344a-49a7-95e9-6d348b5e166b]   
+F, [2018-11-28T14:01:47.493940 #2861] FATAL -- : [3fc1f938-344a-49a7-95e9-6d348b5e166b] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:01:47.493965 #2861] FATAL -- : [3fc1f938-344a-49a7-95e9-6d348b5e166b]   
+F, [2018-11-28T14:01:47.493991 #2861] FATAL -- : [3fc1f938-344a-49a7-95e9-6d348b5e166b] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[3fc1f938-344a-49a7-95e9-6d348b5e166b] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:01:51.456284 #2861]  INFO -- : [da2252e6-6742-42eb-bd84-6cc6e5358852] Started PATCH "/products/1" for 127.0.0.1 at 2018-11-28 14:01:51 +0200
+I, [2018-11-28T14:01:51.457091 #2861]  INFO -- : [da2252e6-6742-42eb-bd84-6cc6e5358852] Processing by ProductsController#update as HTML
+I, [2018-11-28T14:01:51.457291 #2861]  INFO -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"hmm8mMnDFFCIyEBF77O0eS1RR7SZDO4VwgpTmeTnDFcyo9hZbpM4bUdQbhQtYXw3B5jldhxr3YNCwawB5KC4Mw==", "product"=>{"title"=>"Rails, Angular, Postgres, and Bootstrap", "description"=>"<p>\r\n      <em>Powerful, Effective, and Efficient Full-Stack Web Development</em>\r\n      As a Rails developer, you care about user experience and performance,\r\n      but you also want simple and maintainable code. Achieve all that by\r\n      embracing the full stack of web development, from styling with\r\n      Bootstrap, building an interactive user interface with AngularJS, to\r\n      storing data quickly and reliably in PostgreSQL. Take a holistic view of\r\n      full-stack development to create usable, high-performing applications,\r\n      and learn to use these technologies effectively in a Ruby on Rails\r\n      environment.\r\n      </p>", "image_url"=>"dcbang.jpg", "price"=>"40.00", "locale"=>"en"}, "commit"=>"Update Product", "id"=>"1"}
+D, [2018-11-28T14:01:51.459884 #2861] DEBUG -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+D, [2018-11-28T14:01:51.461648 #2861] DEBUG -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+D, [2018-11-28T14:01:51.463005 #2861] DEBUG -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+D, [2018-11-28T14:01:51.469068 #2861] DEBUG -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   [1m[35m (5.6ms)[0m  [1m[35mBEGIN[0m
+D, [2018-11-28T14:01:51.475265 #2861] DEBUG -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   [1m[36mProduct Exists (4.5ms)[0m  [1m[34mSELECT  1 AS one FROM `products` WHERE `products`.`title` = BINARY 'Rails, Angular, Postgres, and Bootstrap' AND (`products`.`id` != 1) LIMIT 1[0m
+D, [2018-11-28T14:01:51.478927 #2861] DEBUG -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   [1m[35mSQL (2.2ms)[0m  [1m[33mUPDATE `products` SET `price_cents` = 4000, `updated_at` = '2018-11-28 12:01:51' WHERE `products`.`id` = 1[0m
+D, [2018-11-28T14:01:51.483653 #2861] DEBUG -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-11-28T14:01:51.484002 #2861]  INFO -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   Rendering store/index.html.erb
+D, [2018-11-28T14:01:51.484719 #2861] DEBUG -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+I, [2018-11-28T14:01:51.493658 #2861]  INFO -- : [da2252e6-6742-42eb-bd84-6cc6e5358852]   Rendered store/index.html.erb (9.5ms)
+D, [2018-11-28T14:01:51.493811 #2861] DEBUG -- : [da2252e6-6742-42eb-bd84-6cc6e5358852] [ActionCable] Broadcasting to products: {:id=>1, :html=>"\n<h1>Your Pragmatic Catalog</h1>\n\n<ul class=\"catalog\">\n\t\t\t\t\t<li class=\"1\">\n\t\t\t\t\t\t<a rel=\"nofollow\" data-method=\"post\" href=\"/line_items?product_id=1\"><img src=\"/assets/dcbang-ad9b1d51642858e55eef18318f2aa44d3dab14670e8441658a4efef032ce0dc9.jpg\" alt=\"Dcbang\" /></a>\n\t\t\t\t\t\t<h2>Rails, Angular, Postgres, and Bootstrap</h2>\n\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t<p>\r\n      <em>Powerful, Effective, and Efficient Full-Stack Web Development</em>\r\n      As a Rails developer, you care about user experience and performance,\r\n      but you also want simple and maintainable code. Achieve all that by\r\n      embracing the full stack of web development, from styling with\r\n      Bootstrap, building an interactive user interface with AngularJS, to\r\n      storing data quickly and reliably in PostgreSQL. Take a holistic view of\r\n      full-stack development to create usable, high-performing applications,\r\n      and learn to use these technologies effectively in a Ruby on Rails\r\n      environment.\r\n      </p>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div class=\"price\">\n\t\t\t\t\t\t\t$40\n\t\t\t\t\t\t\t<form class=\"button_to\" method=\"post\" action=\"/en/line_items?product_id=1\" data-remote=\"true\"><input type=\"submit\" value=\"Add to Cart\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"NDg3j36JTuhYKfE/UzQHl826ufawhQ/YNO1p/UcqB7YutAqOXPkqj226wR4HSN8Iv/gHijALkKtILEgJCF/Q/A==\" /></form>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"2\">\n\t\t\t\t\t\t<a rel=\"nofollow\" data-method=\"post\" href=\"/line_items?product_id=2\"><img src=\"/assets/7apps-f67c3d908f537bac34a290206cc1db4c6f4611196c550e49ba836b796a2602bb.jpg\" alt=\"7apps\" /></a>\n\t\t\t\t\t\t<h2>Seven Mobile Apps in Seven Weeks</h2>\n\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t<p>\r\n      <em>Native Apps, Multiple Platforms</em>\r\n      Answer the question “Can we build this for ALL the devices?” with a\r\n      resounding YES. This book will help you get there with a real-world\r\n      introduction to seven platforms, whether you’re new to mobile or an\r\n      experienced developer needing to expand your options. Plus, you’ll find\r\n      out which cross-platform solution makes the most sense for your needs.\r\n      </p>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div class=\"price\">\n\t\t\t\t\t\t\t$35\n\t\t\t\t\t\t\t<form class=\"button_to\" method=\"post\" action=\"/en/line_items?product_id=2\" data-remote=\"true\"><input type=\"submit\" value=\"Add to Cart\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"yu1wGiT7v3GJnAqNHs8wjT9fF2P3BUCc70Fat1LSyPnQYU0bBovbFrwPOqxKs+gSTR2pH3eL3++TgHtDHacfsw==\" /></form>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"3\">\n\t\t\t\t\t\t<a rel=\"nofollow\" data-method=\"post\" href=\"/line_items?product_id=3\"><img src=\"/assets/adrpo-23a974519e0d4353c6906f82b40bd4cd98b09a2ce748825370c7aa59763f5ac7.jpg\" alt=\"Adrpo\" /></a>\n\t\t\t\t\t\t<h2>Ruby Performance Optimization</h2>\n\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t<p>\n      <em>Why Ruby Is Slow, and How to Fix It</em> \n      You don’t have to accept slow Ruby or Rails performance. In this\n      comprehensive guide to Ruby optimization, you’ll learn how to write\n      faster Ruby code—but that’s just the beginning. See exactly what makes\n      Ruby and Rails code slow, and how to fix it. Alex Dymo will guide you\n      through perils of memory and CPU optimization, profiling, measuring,\n      performance testing, garbage collection, and tuning. You’ll find that\n      all those “hard” things aren’t so difficult after all, and your code\n      will run orders of magnitude faster.\n      </p>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div class=\"price\">\n\t\t\t\t\t\t\t$46\n\t\t\t\t\t\t\t<form class=\"button_to\" method=\"post\" action=\"/en/line_items?product_id=3\" data-remote=\"true\"><input type=\"submit\" value=\"Add to Cart\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"aqE5wzy7V8hn8mDL7ONdmhSX40yp9mFnj3XrrgYzFn5wLQTCHsszr1JhUOq4n4UFZtVdMCl4/hTztMpaSUbBNA==\" /></form>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</li>\n</ul>"}
+I, [2018-11-28T14:01:51.494526 #2861]  INFO -- : [da2252e6-6742-42eb-bd84-6cc6e5358852] Redirected to http://localhost/products/1
+I, [2018-11-28T14:01:51.494670 #2861]  INFO -- : [da2252e6-6742-42eb-bd84-6cc6e5358852] Completed 302 Found in 37ms (ActiveRecord: 18.6ms)
+I, [2018-11-28T14:01:51.503543 #2859]  INFO -- : [1f8c0fad-ebc1-4caa-8144-5a9c808cd66c] Started GET "/products/1" for 127.0.0.1 at 2018-11-28 14:01:51 +0200
+I, [2018-11-28T14:01:51.504318 #2859]  INFO -- : [1f8c0fad-ebc1-4caa-8144-5a9c808cd66c] Processing by ProductsController#show as HTML
+I, [2018-11-28T14:01:51.504357 #2859]  INFO -- : [1f8c0fad-ebc1-4caa-8144-5a9c808cd66c]   Parameters: {"id"=>"1"}
+D, [2018-11-28T14:01:51.505313 #2859] DEBUG -- : [1f8c0fad-ebc1-4caa-8144-5a9c808cd66c]   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+D, [2018-11-28T14:01:51.505787 #2859] DEBUG -- : [1f8c0fad-ebc1-4caa-8144-5a9c808cd66c]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+D, [2018-11-28T14:01:51.506396 #2859] DEBUG -- : [1f8c0fad-ebc1-4caa-8144-5a9c808cd66c]   [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+I, [2018-11-28T14:01:51.506868 #2859]  INFO -- : [1f8c0fad-ebc1-4caa-8144-5a9c808cd66c]   Rendering products/show.html.erb within layouts/application
+I, [2018-11-28T14:01:51.507434 #2859]  INFO -- : [1f8c0fad-ebc1-4caa-8144-5a9c808cd66c]   Rendered products/show.html.erb within layouts/application (0.5ms)
+I, [2018-11-28T14:01:51.508843 #2859]  INFO -- : [1f8c0fad-ebc1-4caa-8144-5a9c808cd66c] Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+I, [2018-11-28T14:01:51.577094 #2861]  INFO -- : [fe6797a8-8ffb-43ea-aec7-297318ce3cc9] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:01:51 +0200
+F, [2018-11-28T14:01:51.578658 #2861] FATAL -- : [fe6797a8-8ffb-43ea-aec7-297318ce3cc9]   
+F, [2018-11-28T14:01:51.578849 #2861] FATAL -- : [fe6797a8-8ffb-43ea-aec7-297318ce3cc9] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:01:51.578969 #2861] FATAL -- : [fe6797a8-8ffb-43ea-aec7-297318ce3cc9]   
+F, [2018-11-28T14:01:51.579041 #2861] FATAL -- : [fe6797a8-8ffb-43ea-aec7-297318ce3cc9] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[fe6797a8-8ffb-43ea-aec7-297318ce3cc9] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T14:01:53.750953 #2859]  INFO -- : [77221756-e9a6-4c75-89c8-1afa85c29e18] Started GET "/products" for 127.0.0.1 at 2018-11-28 14:01:53 +0200
+I, [2018-11-28T14:01:53.751778 #2859]  INFO -- : [77221756-e9a6-4c75-89c8-1afa85c29e18] Processing by ProductsController#index as HTML
+D, [2018-11-28T14:01:53.752797 #2859] DEBUG -- : [77221756-e9a6-4c75-89c8-1afa85c29e18]   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+D, [2018-11-28T14:01:53.753306 #2859] DEBUG -- : [77221756-e9a6-4c75-89c8-1afa85c29e18]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+I, [2018-11-28T14:01:53.753956 #2859]  INFO -- : [77221756-e9a6-4c75-89c8-1afa85c29e18]   Rendering products/index.html.erb within layouts/application
+D, [2018-11-28T14:01:53.755776 #2859] DEBUG -- : [77221756-e9a6-4c75-89c8-1afa85c29e18]   [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+I, [2018-11-28T14:01:53.768185 #2859]  INFO -- : [77221756-e9a6-4c75-89c8-1afa85c29e18]   Rendered products/index.html.erb within layouts/application (14.1ms)
+I, [2018-11-28T14:01:53.769637 #2859]  INFO -- : [77221756-e9a6-4c75-89c8-1afa85c29e18] Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 1.8ms)
+I, [2018-11-28T14:01:53.836715 #2861]  INFO -- : [dd7ede1b-eb7e-4318-a641-fdfc92916c65] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 14:01:53 +0200
+F, [2018-11-28T14:01:53.837634 #2861] FATAL -- : [dd7ede1b-eb7e-4318-a641-fdfc92916c65]   
+F, [2018-11-28T14:01:53.837668 #2861] FATAL -- : [dd7ede1b-eb7e-4318-a641-fdfc92916c65] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T14:01:53.837686 #2861] FATAL -- : [dd7ede1b-eb7e-4318-a641-fdfc92916c65]   
+F, [2018-11-28T14:01:53.837710 #2861] FATAL -- : [dd7ede1b-eb7e-4318-a641-fdfc92916c65] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[dd7ede1b-eb7e-4318-a641-fdfc92916c65] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T15:52:41.516247 #2859]  INFO -- : [0f3731e7-7e60-4c11-b9cb-323107319a2f] Started POST "/" for 127.0.0.1 at 2018-11-28 15:52:41 +0200
+I, [2018-11-28T15:52:41.517381 #2859]  INFO -- : [0f3731e7-7e60-4c11-b9cb-323107319a2f] Processing by StoreController#index as HTML
+I, [2018-11-28T15:52:41.517447 #2859]  INFO -- : [0f3731e7-7e60-4c11-b9cb-323107319a2f]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"YabtoKNsM7pZDZFGPQyZ+6yRka085xtwQZSaO85v1V+WZsejFgae6qXyix4k8PccQ5atsQwklsXeAXyjz2pyPQ==", "set_locale"=>"es"}
+D, [2018-11-28T15:52:41.518688 #2859] DEBUG -- : [0f3731e7-7e60-4c11-b9cb-323107319a2f]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T15:52:41.519204 #2859]  INFO -- : [0f3731e7-7e60-4c11-b9cb-323107319a2f] Redirected to http://localhost/es
+I, [2018-11-28T15:52:41.519380 #2859]  INFO -- : [0f3731e7-7e60-4c11-b9cb-323107319a2f] Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+I, [2018-11-28T15:52:41.548389 #2861]  INFO -- : [942e7c7d-b0c4-499c-80be-4fca6c024d98] Started GET "/es" for 127.0.0.1 at 2018-11-28 15:52:41 +0200
+I, [2018-11-28T15:52:41.549305 #2861]  INFO -- : [942e7c7d-b0c4-499c-80be-4fca6c024d98] Processing by StoreController#index as HTML
+I, [2018-11-28T15:52:41.549366 #2861]  INFO -- : [942e7c7d-b0c4-499c-80be-4fca6c024d98]   Parameters: {"locale"=>"es"}
+D, [2018-11-28T15:52:41.550420 #2861] DEBUG -- : [942e7c7d-b0c4-499c-80be-4fca6c024d98]   [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T15:52:41.551147 #2861]  INFO -- : [942e7c7d-b0c4-499c-80be-4fca6c024d98]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T15:52:41.553376 #2861] DEBUG -- : [942e7c7d-b0c4-499c-80be-4fca6c024d98]   [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T15:52:41.558185 #2861]  INFO -- : [942e7c7d-b0c4-499c-80be-4fca6c024d98]   Rendered store/index.html.erb within layouts/application (7.0ms)
+D, [2018-11-28T15:52:41.563381 #2861] DEBUG -- : [942e7c7d-b0c4-499c-80be-4fca6c024d98]   [1m[36mLineItem Exists (3.7ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 22 LIMIT 1[0m
+I, [2018-11-28T15:52:41.564146 #2861]  INFO -- : [942e7c7d-b0c4-499c-80be-4fca6c024d98] Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 4.3ms)
+I, [2018-11-28T15:52:41.641090 #2859]  INFO -- : [88d31396-777b-46e3-bfa9-743cf5996f5a] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 15:52:41 +0200
+F, [2018-11-28T15:52:41.642080 #2859] FATAL -- : [88d31396-777b-46e3-bfa9-743cf5996f5a]   
+F, [2018-11-28T15:52:41.642163 #2859] FATAL -- : [88d31396-777b-46e3-bfa9-743cf5996f5a] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T15:52:41.642184 #2859] FATAL -- : [88d31396-777b-46e3-bfa9-743cf5996f5a]   
+F, [2018-11-28T15:52:41.642209 #2859] FATAL -- : [88d31396-777b-46e3-bfa9-743cf5996f5a] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[88d31396-777b-46e3-bfa9-743cf5996f5a] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T15:52:46.387234 #2859]  INFO -- : [35e87c37-243b-4953-9feb-65bee8a7eaa4] Started GET "/" for 127.0.0.1 at 2018-11-28 15:52:46 +0200
+I, [2018-11-28T15:52:46.388320 #2859]  INFO -- : [35e87c37-243b-4953-9feb-65bee8a7eaa4] Processing by StoreController#index as HTML
+D, [2018-11-28T15:52:46.389456 #2859] DEBUG -- : [35e87c37-243b-4953-9feb-65bee8a7eaa4]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T15:52:46.390214 #2859]  INFO -- : [35e87c37-243b-4953-9feb-65bee8a7eaa4]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T15:52:46.392745 #2859] DEBUG -- : [35e87c37-243b-4953-9feb-65bee8a7eaa4]   [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T15:52:46.400285 #2859]  INFO -- : [35e87c37-243b-4953-9feb-65bee8a7eaa4]   Rendered store/index.html.erb within layouts/application (10.0ms)
+D, [2018-11-28T15:52:46.403668 #2859] DEBUG -- : [35e87c37-243b-4953-9feb-65bee8a7eaa4]   [1m[36mLineItem Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 22 LIMIT 1[0m
+I, [2018-11-28T15:52:46.404441 #2859]  INFO -- : [35e87c37-243b-4953-9feb-65bee8a7eaa4] Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 4.2ms)
+I, [2018-11-28T15:52:46.473798 #2861]  INFO -- : [8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 15:52:46 +0200
+F, [2018-11-28T15:52:46.474698 #2861] FATAL -- : [8b6b3eb9-9ced-40c6-a096-c58f8f430e5a]   
+F, [2018-11-28T15:52:46.474736 #2861] FATAL -- : [8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T15:52:46.474755 #2861] FATAL -- : [8b6b3eb9-9ced-40c6-a096-c58f8f430e5a]   
+F, [2018-11-28T15:52:46.474780 #2861] FATAL -- : [8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[8b6b3eb9-9ced-40c6-a096-c58f8f430e5a] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T15:53:34.408730 #2861]  INFO -- : [dbb1b36b-5233-4961-8c2b-da291747b753] Started GET "/" for 127.0.0.1 at 2018-11-28 15:53:34 +0200
+I, [2018-11-28T15:53:34.409568 #2861]  INFO -- : [dbb1b36b-5233-4961-8c2b-da291747b753] Processing by StoreController#index as HTML
+D, [2018-11-28T15:53:34.410485 #2861] DEBUG -- : [dbb1b36b-5233-4961-8c2b-da291747b753]   [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 22 LIMIT 1[0m
+I, [2018-11-28T15:53:34.411122 #2861]  INFO -- : [dbb1b36b-5233-4961-8c2b-da291747b753]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T15:53:34.411879 #2861] DEBUG -- : [dbb1b36b-5233-4961-8c2b-da291747b753]   [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T15:53:34.417300 #2861]  INFO -- : [dbb1b36b-5233-4961-8c2b-da291747b753]   Rendered store/index.html.erb within layouts/application (6.1ms)
+D, [2018-11-28T15:53:34.427404 #2861] DEBUG -- : [dbb1b36b-5233-4961-8c2b-da291747b753]   [1m[36mLineItem Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 22 LIMIT 1[0m
+I, [2018-11-28T15:53:34.429954 #2861]  INFO -- : [dbb1b36b-5233-4961-8c2b-da291747b753] Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 2.0ms)
+I, [2018-11-28T15:53:34.476781 #2859]  INFO -- : [4442d220-1724-4644-9b45-7dd8790d9bcc] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 15:53:34 +0200
+F, [2018-11-28T15:53:34.477723 #2859] FATAL -- : [4442d220-1724-4644-9b45-7dd8790d9bcc]   
+F, [2018-11-28T15:53:34.477762 #2859] FATAL -- : [4442d220-1724-4644-9b45-7dd8790d9bcc] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T15:53:34.477782 #2859] FATAL -- : [4442d220-1724-4644-9b45-7dd8790d9bcc]   
+F, [2018-11-28T15:53:34.477807 #2859] FATAL -- : [4442d220-1724-4644-9b45-7dd8790d9bcc] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[4442d220-1724-4644-9b45-7dd8790d9bcc] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T15:54:33.972283 #2859]  INFO -- : [257e945d-6d4c-44e2-948c-a085d102566f] Started GET "/" for 127.0.0.1 at 2018-11-28 15:54:33 +0200
+I, [2018-11-28T15:54:33.974554 #2859]  INFO -- : [257e945d-6d4c-44e2-948c-a085d102566f] Processing by StoreController#index as HTML
+D, [2018-11-28T15:54:33.976376 #2859] DEBUG -- : [257e945d-6d4c-44e2-948c-a085d102566f]   [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = NULL LIMIT 1[0m
+D, [2018-11-28T15:54:33.979226 #2859] DEBUG -- : [257e945d-6d4c-44e2-948c-a085d102566f]   [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+D, [2018-11-28T15:54:33.985459 #2859] DEBUG -- : [257e945d-6d4c-44e2-948c-a085d102566f]   [1m[35mSQL (4.0ms)[0m  [1m[32mINSERT INTO `carts` (`created_at`, `updated_at`) VALUES ('2018-11-28 13:54:33', '2018-11-28 13:54:33')[0m
+D, [2018-11-28T15:54:33.992255 #2859] DEBUG -- : [257e945d-6d4c-44e2-948c-a085d102566f]   [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-11-28T15:54:33.992988 #2859]  INFO -- : [257e945d-6d4c-44e2-948c-a085d102566f]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T15:54:33.993882 #2859] DEBUG -- : [257e945d-6d4c-44e2-948c-a085d102566f]   [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T15:54:34.009188 #2859]  INFO -- : [257e945d-6d4c-44e2-948c-a085d102566f]   Rendered store/index.html.erb within layouts/application (16.1ms)
+D, [2018-11-28T15:54:34.017055 #2859] DEBUG -- : [257e945d-6d4c-44e2-948c-a085d102566f]   [1m[36mLineItem Exists (5.9ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 23 LIMIT 1[0m
+I, [2018-11-28T15:54:34.017657 #2859]  INFO -- : [257e945d-6d4c-44e2-948c-a085d102566f] Completed 200 OK in 43ms (Views: 18.6ms | ActiveRecord: 19.2ms)
+I, [2018-11-28T15:54:34.097507 #2861]  INFO -- : [af6c648c-abe7-4de6-9f72-07f98dc65da5] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 15:54:34 +0200
+F, [2018-11-28T15:54:34.098504 #2861] FATAL -- : [af6c648c-abe7-4de6-9f72-07f98dc65da5]   
+F, [2018-11-28T15:54:34.098554 #2861] FATAL -- : [af6c648c-abe7-4de6-9f72-07f98dc65da5] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T15:54:34.098578 #2861] FATAL -- : [af6c648c-abe7-4de6-9f72-07f98dc65da5]   
+F, [2018-11-28T15:54:34.098604 #2861] FATAL -- : [af6c648c-abe7-4de6-9f72-07f98dc65da5] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[af6c648c-abe7-4de6-9f72-07f98dc65da5] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T15:54:37.190069 #2861]  INFO -- : [5b5b8986-4bfc-4d0f-bb0d-ac9dc875ce7f] Started POST "/" for 127.0.0.1 at 2018-11-28 15:54:37 +0200
+I, [2018-11-28T15:54:37.190941 #2861]  INFO -- : [5b5b8986-4bfc-4d0f-bb0d-ac9dc875ce7f] Processing by StoreController#index as HTML
+I, [2018-11-28T15:54:37.191031 #2861]  INFO -- : [5b5b8986-4bfc-4d0f-bb0d-ac9dc875ce7f]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"mejnzJx28Cq9NnwPWze1FEvKuxlSPm7L63lxSuL5ikQgPM7jxjvbu+qGvWEZp4IXbt7sPNbDSd2MfChKnimovw==", "set_locale"=>"es"}
+D, [2018-11-28T15:54:37.192254 #2861] DEBUG -- : [5b5b8986-4bfc-4d0f-bb0d-ac9dc875ce7f]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 23 LIMIT 1[0m
+I, [2018-11-28T15:54:37.192703 #2861]  INFO -- : [5b5b8986-4bfc-4d0f-bb0d-ac9dc875ce7f] Redirected to http://localhost/es
+I, [2018-11-28T15:54:37.192819 #2861]  INFO -- : [5b5b8986-4bfc-4d0f-bb0d-ac9dc875ce7f] Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+I, [2018-11-28T15:54:37.213614 #2859]  INFO -- : [f282a446-ac6a-4b2c-a64c-f04bf528e683] Started GET "/es" for 127.0.0.1 at 2018-11-28 15:54:37 +0200
+I, [2018-11-28T15:54:37.214466 #2859]  INFO -- : [f282a446-ac6a-4b2c-a64c-f04bf528e683] Processing by StoreController#index as HTML
+I, [2018-11-28T15:54:37.214533 #2859]  INFO -- : [f282a446-ac6a-4b2c-a64c-f04bf528e683]   Parameters: {"locale"=>"es"}
+D, [2018-11-28T15:54:37.215390 #2859] DEBUG -- : [f282a446-ac6a-4b2c-a64c-f04bf528e683]   [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 23 LIMIT 1[0m
+I, [2018-11-28T15:54:37.216037 #2859]  INFO -- : [f282a446-ac6a-4b2c-a64c-f04bf528e683]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T15:54:37.216670 #2859] DEBUG -- : [f282a446-ac6a-4b2c-a64c-f04bf528e683]   [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T15:54:37.225346 #2859]  INFO -- : [f282a446-ac6a-4b2c-a64c-f04bf528e683]   Rendered store/index.html.erb within layouts/application (3.4ms)
+D, [2018-11-28T15:54:37.231741 #2859] DEBUG -- : [f282a446-ac6a-4b2c-a64c-f04bf528e683]   [1m[36mLineItem Exists (4.4ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 23 LIMIT 1[0m
+I, [2018-11-28T15:54:37.232382 #2859]  INFO -- : [f282a446-ac6a-4b2c-a64c-f04bf528e683] Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 4.9ms)
+I, [2018-11-28T15:54:37.314707 #2861]  INFO -- : [12a47300-a683-4fe6-9ad9-7bd7237b8d01] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 15:54:37 +0200
+F, [2018-11-28T15:54:37.315720 #2861] FATAL -- : [12a47300-a683-4fe6-9ad9-7bd7237b8d01]   
+F, [2018-11-28T15:54:37.315771 #2861] FATAL -- : [12a47300-a683-4fe6-9ad9-7bd7237b8d01] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T15:54:37.315794 #2861] FATAL -- : [12a47300-a683-4fe6-9ad9-7bd7237b8d01]   
+F, [2018-11-28T15:54:37.315828 #2861] FATAL -- : [12a47300-a683-4fe6-9ad9-7bd7237b8d01] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[12a47300-a683-4fe6-9ad9-7bd7237b8d01] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
+I, [2018-11-28T15:54:38.891743 #2861]  INFO -- : [d32013ed-b011-4c57-9876-77659576382a] Started POST "/" for 127.0.0.1 at 2018-11-28 15:54:38 +0200
+I, [2018-11-28T15:54:38.892523 #2861]  INFO -- : [d32013ed-b011-4c57-9876-77659576382a] Processing by StoreController#index as HTML
+I, [2018-11-28T15:54:38.892567 #2861]  INFO -- : [d32013ed-b011-4c57-9876-77659576382a]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AYeeayOatUKs10wAwjWNMlxRnHQA8PsBzPEZ5crK+164U7dEedee0/tnjW6ApboxeUXLUYQN3Ber9EDlthrZpQ==", "set_locale"=>"en"}
+D, [2018-11-28T15:54:38.893496 #2861] DEBUG -- : [d32013ed-b011-4c57-9876-77659576382a]   [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 23 LIMIT 1[0m
+I, [2018-11-28T15:54:38.893944 #2861]  INFO -- : [d32013ed-b011-4c57-9876-77659576382a] Redirected to http://localhost/en
+I, [2018-11-28T15:54:38.894056 #2861]  INFO -- : [d32013ed-b011-4c57-9876-77659576382a] Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+I, [2018-11-28T15:54:38.922038 #2859]  INFO -- : [1873b50b-f9d2-4e58-8140-1498f8a88bf2] Started GET "/en" for 127.0.0.1 at 2018-11-28 15:54:38 +0200
+I, [2018-11-28T15:54:38.923112 #2859]  INFO -- : [1873b50b-f9d2-4e58-8140-1498f8a88bf2] Processing by StoreController#index as HTML
+I, [2018-11-28T15:54:38.923169 #2859]  INFO -- : [1873b50b-f9d2-4e58-8140-1498f8a88bf2]   Parameters: {"locale"=>"en"}
+D, [2018-11-28T15:54:38.924405 #2859] DEBUG -- : [1873b50b-f9d2-4e58-8140-1498f8a88bf2]   [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 23 LIMIT 1[0m
+I, [2018-11-28T15:54:38.925158 #2859]  INFO -- : [1873b50b-f9d2-4e58-8140-1498f8a88bf2]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-28T15:54:38.927920 #2859] DEBUG -- : [1873b50b-f9d2-4e58-8140-1498f8a88bf2]   [1m[36mProduct Load (2.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`title` ASC[0m
+I, [2018-11-28T15:54:38.939139 #2859]  INFO -- : [1873b50b-f9d2-4e58-8140-1498f8a88bf2]   Rendered store/index.html.erb within layouts/application (13.9ms)
+D, [2018-11-28T15:54:38.951924 #2859] DEBUG -- : [1873b50b-f9d2-4e58-8140-1498f8a88bf2]   [1m[36mLineItem Exists (6.8ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 23 LIMIT 1[0m
+I, [2018-11-28T15:54:38.952524 #2859]  INFO -- : [1873b50b-f9d2-4e58-8140-1498f8a88bf2] Completed 200 OK in 29ms (Views: 18.5ms | ActiveRecord: 9.3ms)
+I, [2018-11-28T15:54:39.014021 #2861]  INFO -- : [f8e2a69a-faf9-4abe-bad1-02cf63618606] Started GET "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js" for 127.0.0.1 at 2018-11-28 15:54:39 +0200
+F, [2018-11-28T15:54:39.014925 #2861] FATAL -- : [f8e2a69a-faf9-4abe-bad1-02cf63618606]   
+F, [2018-11-28T15:54:39.014960 #2861] FATAL -- : [f8e2a69a-faf9-4abe-bad1-02cf63618606] ActionController::RoutingError (No route matches [GET] "/assets/application-589e83dd04d8b84a9466cfe19f0e97ff475eb191b6d45755ed6f39a3129c8b33.js"):
+F, [2018-11-28T15:54:39.014985 #2861] FATAL -- : [f8e2a69a-faf9-4abe-bad1-02cf63618606]   
+F, [2018-11-28T15:54:39.015012 #2861] FATAL -- : [f8e2a69a-faf9-4abe-bad1-02cf63618606] actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `load'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] /home/timsarom/.rbenv/versions/2.4.4/bin/unicorn:23:in `<top (required)>'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `load'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/cli/exec.rb:74:in `kernel_load'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/cli/exec.rb:28:in `run'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/cli.rb:463:in `exec'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/cli.rb:27:in `dispatch'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/cli.rb:18:in `start'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) exe/bundle:30:in `block in <top (required)>'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] bundler (1.17.1) exe/bundle:22:in `<top (required)>'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `load'
+[f8e2a69a-faf9-4abe-bad1-02cf63618606] /home/timsarom/.rbenv/versions/2.4.4/bin/bundle:23:in `<main>'
