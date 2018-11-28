@@ -234,3 +234,6 @@ I, [2018-11-27T16:43:06.478873 #2259]  INFO -- : worker=1 ready
 [DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
 [DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
 [DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+I, [2018-11-28T11:38:24.495358 #2245]  INFO -- : reaped #<Process::Status: pid 2257 exit 0> worker=0
+I, [2018-11-28T11:38:24.495439 #2245]  INFO -- : reaped #<Process::Status: pid 2259 exit 0> worker=1
+I, [2018-11-28T11:38:24.495480 #2245]  INFO -- : master complete
