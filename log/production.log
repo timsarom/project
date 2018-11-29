@@ -8136,3 +8136,38 @@ D, [2018-11-29T16:27:18.778410 #2345] DEBUG -- : [8b938f49-85b5-4e1f-ab5d-3ca0bc
 I, [2018-11-29T16:27:18.780168 #2345]  INFO -- : [8b938f49-85b5-4e1f-ab5d-3ca0bc11ecf8]   Rendered store/index.html.erb within layouts/application (11.9ms)
 D, [2018-11-29T16:27:18.790623 #2345] DEBUG -- : [8b938f49-85b5-4e1f-ab5d-3ca0bc11ecf8]   [1m[36mLineItem Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 40 LIMIT 1[0m
 I, [2018-11-29T16:27:18.791324 #2345]  INFO -- : [8b938f49-85b5-4e1f-ab5d-3ca0bc11ecf8] Completed 200 OK in 104ms (Views: 13.8ms | ActiveRecord: 34.1ms)
+I, [2018-11-29T16:38:54.597598 #2011]  INFO -- : [33639f7e-a831-45a1-b33b-814357826fd1] Started GET "/" for 127.0.0.1 at 2018-11-29 16:38:54 +0200
+I, [2018-11-29T16:38:54.683702 #2011]  INFO -- : [33639f7e-a831-45a1-b33b-814357826fd1] Processing by StoreController#index as HTML
+D, [2018-11-29T16:38:54.730315 #2011] DEBUG -- : [33639f7e-a831-45a1-b33b-814357826fd1]   [1m[35m (7.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2018-11-29T16:38:54.747833 #2011] DEBUG -- : [33639f7e-a831-45a1-b33b-814357826fd1]   [1m[36mCart Load (1.0ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = NULL LIMIT 1[0m
+D, [2018-11-29T16:38:54.758798 #2011] DEBUG -- : [33639f7e-a831-45a1-b33b-814357826fd1]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-11-29T16:38:54.761746 #2011] DEBUG -- : [33639f7e-a831-45a1-b33b-814357826fd1]   [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO `carts` (`created_at`, `updated_at`) VALUES ('2018-11-29 14:38:54', '2018-11-29 14:38:54')[0m
+D, [2018-11-29T16:38:54.765072 #2011] DEBUG -- : [33639f7e-a831-45a1-b33b-814357826fd1]   [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-11-29T16:38:54.769613 #2011]  INFO -- : [33639f7e-a831-45a1-b33b-814357826fd1]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-29T16:38:54.785641 #2011] DEBUG -- : [33639f7e-a831-45a1-b33b-814357826fd1]   [1m[35m (3.4ms)[0m  [1m[34mSELECT COUNT(*) AS `size`, MAX(`products`.`updated_at`) AS timestamp FROM `products`[0m
+I, [2018-11-29T16:38:54.788189 #2011]  INFO -- : [33639f7e-a831-45a1-b33b-814357826fd1]   Rendered store/index.html.erb within layouts/application (18.5ms)
+D, [2018-11-29T16:38:54.810114 #2011] DEBUG -- : [33639f7e-a831-45a1-b33b-814357826fd1]   [1m[36mLineItem Exists (4.0ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 41 LIMIT 1[0m
+I, [2018-11-29T16:38:54.810739 #2011]  INFO -- : [33639f7e-a831-45a1-b33b-814357826fd1] Completed 200 OK in 127ms (Views: 33.5ms | ActiveRecord: 33.0ms)
+I, [2018-11-29T16:40:02.268757 #2013]  INFO -- : [881937f3-52a4-4471-a6a3-5df90df626ed] Started GET "/" for 127.0.0.1 at 2018-11-29 16:40:02 +0200
+I, [2018-11-29T16:40:02.302154 #2013]  INFO -- : [881937f3-52a4-4471-a6a3-5df90df626ed] Processing by StoreController#index as HTML
+D, [2018-11-29T16:40:02.339071 #2013] DEBUG -- : [881937f3-52a4-4471-a6a3-5df90df626ed]   [1m[35m (5.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2018-11-29T16:40:02.348703 #2013] DEBUG -- : [881937f3-52a4-4471-a6a3-5df90df626ed]   [1m[36mCart Load (2.4ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = NULL LIMIT 1[0m
+D, [2018-11-29T16:40:02.358495 #2013] DEBUG -- : [881937f3-52a4-4471-a6a3-5df90df626ed]   [1m[35m (4.4ms)[0m  [1m[35mBEGIN[0m
+D, [2018-11-29T16:40:02.360338 #2013] DEBUG -- : [881937f3-52a4-4471-a6a3-5df90df626ed]   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `carts` (`created_at`, `updated_at`) VALUES ('2018-11-29 14:40:02', '2018-11-29 14:40:02')[0m
+D, [2018-11-29T16:40:02.365391 #2013] DEBUG -- : [881937f3-52a4-4471-a6a3-5df90df626ed]   [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-11-29T16:40:02.367997 #2013]  INFO -- : [881937f3-52a4-4471-a6a3-5df90df626ed]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-29T16:40:02.379174 #2013] DEBUG -- : [881937f3-52a4-4471-a6a3-5df90df626ed]   [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) AS `size`, MAX(`products`.`updated_at`) AS timestamp FROM `products`[0m
+I, [2018-11-29T16:40:02.380163 #2013]  INFO -- : [881937f3-52a4-4471-a6a3-5df90df626ed]   Rendered store/index.html.erb within layouts/application (12.1ms)
+D, [2018-11-29T16:40:02.407049 #2013] DEBUG -- : [881937f3-52a4-4471-a6a3-5df90df626ed]   [1m[36mLineItem Exists (5.7ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 42 LIMIT 1[0m
+I, [2018-11-29T16:40:02.407970 #2013]  INFO -- : [881937f3-52a4-4471-a6a3-5df90df626ed] Completed 200 OK in 106ms (Views: 28.6ms | ActiveRecord: 30.8ms)
+I, [2018-11-29T16:40:52.477597 #2011]  INFO -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d] Started GET "/" for 127.0.0.1 at 2018-11-29 16:40:52 +0200
+I, [2018-11-29T16:40:52.479058 #2011]  INFO -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d] Processing by StoreController#index as HTML
+D, [2018-11-29T16:40:52.480295 #2011] DEBUG -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d]   [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = NULL LIMIT 1[0m
+D, [2018-11-29T16:40:52.482274 #2011] DEBUG -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d]   [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+D, [2018-11-29T16:40:52.483852 #2011] DEBUG -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d]   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `carts` (`created_at`, `updated_at`) VALUES ('2018-11-29 14:40:52', '2018-11-29 14:40:52')[0m
+D, [2018-11-29T16:40:52.490735 #2011] DEBUG -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d]   [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-11-29T16:40:52.491365 #2011]  INFO -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d]   Rendering store/index.html.erb within layouts/application
+D, [2018-11-29T16:40:52.492780 #2011] DEBUG -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d]   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS `size`, MAX(`products`.`updated_at`) AS timestamp FROM `products`[0m
+I, [2018-11-29T16:40:52.493155 #2011]  INFO -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d]   Rendered store/index.html.erb within layouts/application (1.7ms)
+D, [2018-11-29T16:40:52.499290 #2011] DEBUG -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d]   [1m[36mLineItem Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `line_items` WHERE `line_items`.`cart_id` = 43 LIMIT 1[0m
+I, [2018-11-29T16:40:52.500047 #2011]  INFO -- : [3c36f7ee-2712-46db-804b-ab2e1cdcea7d] Completed 200 OK in 21ms (Views: 8.2ms | ActiveRecord: 9.2ms)
