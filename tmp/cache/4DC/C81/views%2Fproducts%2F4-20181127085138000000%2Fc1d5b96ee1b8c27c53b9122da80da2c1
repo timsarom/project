@@ -1,0 +1,22 @@
+o: ActiveSupport::Cache::Entry:@valueI"S					<li class="4">
+						<a rel="nofollow" data-method="post" href="/line_items?product_id=4"><img src="/assets/lorem-f67c3d908f537bac34a290206cc1db4c6f4611196c550e49ba836b796a2602bb.jpg" alt="Lorem" /></a>
+						<h2>Libro numero 1 en español</h2>
+						<p>
+							<p>
+      Potente, eficaz y eficiente Desarrollo web de pila completa Como 
+      desarrollador de Rails, le interesa la experiencia y el rendimiento 
+      del usuario, pero también desea un código simple y fácil de mantener. 
+      Obtenga todo esto al abarcar la pila completa de desarrollo web, desde 
+      diseñar con Bootstrap, crear una interfaz de usuario interactiva con 
+      AngularJS, hasta almacenar datos de manera rápida y confiable en PostgreSQL. 
+      Obtenga una visión holística del desarrollo de pila completa para crear 
+      aplicaciones utilizables y de alto rendimiento, y aprenda a usar estas 
+      tecnologías de manera efectiva en un entorno Ruby on Rails.
+      </p>
+						</p>
+						<div class="price">
+							€47,85
+							<form class="button_to" method="post" action="/es/line_items?product_id=4" data-remote="true"><input type="submit" value="A&ntilde;adir al Carrito" /><input type="hidden" name="authenticity_token" value="xpN0ejae7Z9SU4JL3J5Pn5gs+4E5XXQ1ul/H0YTOwUzfI4naxfhL4g5SEDehr7HefzT0O/LCHSEN/PUKEX+qFw==" /></form>
+						</div>
+					</li>
+:ET:@created_atf1543487169.2575493:@expires_in0

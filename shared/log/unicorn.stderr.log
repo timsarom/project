@@ -838,3 +838,26 @@ I, [2018-11-29T12:11:31.978341 #2297]  INFO -- : worker=0 spawned pid=2297
 I, [2018-11-29T12:11:31.979112 #2297]  INFO -- : worker=0 ready
 I, [2018-11-29T12:11:31.978997 #2299]  INFO -- : worker=1 spawned pid=2299
 I, [2018-11-29T12:11:31.979312 #2299]  INFO -- : worker=1 ready
+I, [2018-11-29T12:18:21.703851 #2285]  INFO -- : reaped #<Process::Status: pid 2297 exit 0> worker=0
+I, [2018-11-29T12:18:21.703935 #2285]  INFO -- : reaped #<Process::Status: pid 2299 exit 0> worker=1
+I, [2018-11-29T12:18:21.704000 #2285]  INFO -- : master complete
+I, [2018-11-29T12:24:48.676512 #2412]  INFO -- : Refreshing Gem list
+I, [2018-11-29T12:24:50.469703 #2412]  INFO -- : unlinking existing socket=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock
+I, [2018-11-29T12:24:50.469826 #2412]  INFO -- : listening on addr=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock fd=11
+I, [2018-11-29T12:24:50.469896 #2412]  INFO -- : worker=0 spawning...
+I, [2018-11-29T12:24:50.470753 #2412]  INFO -- : worker=1 spawning...
+I, [2018-11-29T12:24:50.471825 #2412]  INFO -- : master process ready
+I, [2018-11-29T12:24:50.475948 #2415]  INFO -- : worker=0 spawned pid=2415
+I, [2018-11-29T12:24:50.476082 #2415]  INFO -- : worker=0 ready
+I, [2018-11-29T12:24:50.476610 #2417]  INFO -- : worker=1 spawned pid=2417
+I, [2018-11-29T12:24:50.476709 #2417]  INFO -- : worker=1 ready
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation

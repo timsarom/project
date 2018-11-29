@@ -1451,3 +1451,284 @@
   INFO [5f26d419] Running /usr/bin/env echo "Branch master (at 520fa5b2ae21ee71398aedf7fb80a11a96742eeb) deployed as release 20181129074554 by timsarom" >> /home/timsarom/project/revisions.log on nginx
  DEBUG [5f26d419] Command: cd /home/timsarom/project/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env echo "Branch master (at 520fa5b2ae21ee71398aedf7fb80a11a96742eeb) deployed as release 20181129074554 by timsarom" >> /home/timsarom/project/revisions.log )
   INFO [5737d4d8] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-29 12:17:05 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [7daecb64] Running [ -d $HOME/.rbenv/versions/2.4.4 ] on nginx
+ DEBUG [7daecb64] Command: [ -d $HOME/.rbenv/versions/2.4.4 ]
+ DEBUG [a5e28456] Finished in 3.228 seconds with exit status 0 (successful).
+  INFO [43368430] Running /usr/bin/env mkdir -p /tmp on nginx
+ DEBUG [43368430] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env mkdir -p /tmp )
+  INFO [119ff283] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-project-production-timsarom.sh 0.0%
+  INFO Uploading /tmp/git-ssh-project-production-timsarom.sh 100.0%
+  INFO [03942e62] Running /usr/bin/env chmod 700 /tmp/git-ssh-project-production-timsarom.sh on nginx
+ DEBUG [03942e62] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env chmod 700 /tmp/git-ssh-project-production-timsarom.sh )
+  INFO [ddc33442] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [f902901e] Running /usr/bin/env git ls-remote git@github.com:timsarom/project.git HEAD on nginx
+ DEBUG [f902901e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-production-timsarom.sh" ; /usr/bin/env git ls-remote git@github.com:timsarom/project.git HEAD )
+ DEBUG [0295ec3e] 	Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+ DEBUG [0295ec3e] 	4bcbf79044b4944aa0ca14c05c8cd49eb64436f0	HEAD
+  INFO [0295ec3e] Finished in 2.451 seconds with exit status 0 (successful).
+  INFO [5cbb5bbd] Running /usr/bin/env mkdir -p /home/timsarom/project/shared /home/timsarom/project/releases on nginx
+ DEBUG [5cbb5bbd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env mkdir -p /home/timsarom/project/shared /home/timsarom/project/releases )
+  INFO [2b95d88d] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [eb45b401] Running /usr/bin/env mkdir -p /home/timsarom/project/shared/log /home/timsarom/project/shared/tmp/pids /home/timsarom/project/shared/tmp/cache /home/timsarom/project/shared/tmp/sockets /home/timsarom/project/shared/public/system /home/timsarom/project/shared/vendor/bundle /home/timsarom/project/shared/public/assets on nginx
+ DEBUG [eb45b401] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env mkdir -p /home/timsarom/project/shared/log /home/timsarom/project/shared/tmp/pids /home/timsarom/project/shared/tmp/cache /home/timsarom/project/shared/tmp/sockets /home/timsarom/project/shared/public/system /home/timsarom/project/shared/vendor/bundle /home/timsarom/project/shared/public/assets )
+  INFO [0b0de41e] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [63fe8498] Running /usr/bin/env mkdir -p /home/timsarom/project/shared/config on nginx
+ DEBUG [63fe8498] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env mkdir -p /home/timsarom/project/shared/config )
+  INFO [8bb2242e] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [05dc07e7] Running [ -f /home/timsarom/project/shared/config/secrets.yml ] on nginx
+ DEBUG [05dc07e7] Command: [ -f /home/timsarom/project/shared/config/secrets.yml ]
+ DEBUG [2281ef7e] Finished in 0.038 seconds with exit status 0 (successful).
+ DEBUG [fbbc7232] Running [ -f /home/timsarom/project/shared/config/database.yml ] on nginx
+ DEBUG [fbbc7232] Command: [ -f /home/timsarom/project/shared/config/database.yml ]
+ DEBUG [c4946641] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [71af30b1] Running [ -f /home/timsarom/project/shared/config/database.yml ] on nginx
+ DEBUG [71af30b1] Command: [ -f /home/timsarom/project/shared/config/database.yml ]
+ DEBUG [4b464fa8] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [52d64821] Running [ -f /home/timsarom/project/shared/config/secrets.yml ] on nginx
+ DEBUG [52d64821] Command: [ -f /home/timsarom/project/shared/config/secrets.yml ]
+ DEBUG [17fa3427] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [4f4dce3f] Running [ -f /home/timsarom/project/current/REVISION ] on nginx
+ DEBUG [4f4dce3f] Command: [ -f /home/timsarom/project/current/REVISION ]
+ DEBUG [cc95bec3] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [5af8f5be] Running /usr/bin/env cat /home/timsarom/project/current/REVISION 2>/dev/null on nginx
+ DEBUG [5af8f5be] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env cat /home/timsarom/project/current/REVISION 2>/dev/null )
+ DEBUG [2bb961df] 	520fa5b2ae21ee71398aedf7fb80a11a96742eeb
+ DEBUG [2bb961df] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [b2f7347f] Running [ -f /home/timsarom/project/repo/HEAD ] on nginx
+ DEBUG [b2f7347f] Command: [ -f /home/timsarom/project/repo/HEAD ]
+ DEBUG [4099535b] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/timsarom/project/repo
+ DEBUG [834078fa] Running if test ! -d /home/timsarom/project/repo; then echo "Directory does not exist '/home/timsarom/project/repo'" 1>&2; false; fi on nginx
+ DEBUG [834078fa] Command: if test ! -d /home/timsarom/project/repo; then echo "Directory does not exist '/home/timsarom/project/repo'" 1>&2; false; fi
+ DEBUG [1a228a9b] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [96f3e35d] Running /usr/bin/env git remote set-url origin git@github.com:timsarom/project.git on nginx
+ DEBUG [96f3e35d] Command: cd /home/timsarom/project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-production-timsarom.sh" ; /usr/bin/env git remote set-url origin git@github.com:timsarom/project.git )
+  INFO [1a7cd81f] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [f6951af2] Running /usr/bin/env git remote update --prune on nginx
+ DEBUG [f6951af2] Command: cd /home/timsarom/project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-production-timsarom.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [b36e37e0] 	Fetching origin
+ DEBUG [b36e37e0] 	From github.com:timsarom/project
+ DEBUG [b36e37e0] 	   520fa5b..4bcbf79  master     -> master
+  INFO [b36e37e0] Finished in 3.155 seconds with exit status 0 (successful).
+ DEBUG [e51559c5] Running if test ! -d /home/timsarom/project/repo; then echo "Directory does not exist '/home/timsarom/project/repo'" 1>&2; false; fi on nginx
+ DEBUG [e51559c5] Command: if test ! -d /home/timsarom/project/repo; then echo "Directory does not exist '/home/timsarom/project/repo'" 1>&2; false; fi
+ DEBUG [8b3689d1] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [bb27606e] Running /usr/bin/env mkdir -p /home/timsarom/project/releases/20181129101711 on nginx
+ DEBUG [bb27606e] Command: cd /home/timsarom/project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-production-timsarom.sh" ; /usr/bin/env mkdir -p /home/timsarom/project/releases/20181129101711 )
+  INFO [ac3a124b] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [2893b745] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/timsarom/project/releases/20181129101711 on nginx
+ DEBUG [2893b745] Command: cd /home/timsarom/project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-production-timsarom.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/timsarom/project/releases/20181129101711 )
+  INFO [512eb2a6] Finished in 3.280 seconds with exit status 0 (successful).
+ DEBUG [dde88f96] Running if test ! -d /home/timsarom/project/repo; then echo "Directory does not exist '/home/timsarom/project/repo'" 1>&2; false; fi on nginx
+ DEBUG [dde88f96] Command: if test ! -d /home/timsarom/project/repo; then echo "Directory does not exist '/home/timsarom/project/repo'" 1>&2; false; fi
+ DEBUG [0aa64401] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [a7f6c030] Running /usr/bin/env git rev-list --max-count=1 master on nginx
+ DEBUG [a7f6c030] Command: cd /home/timsarom/project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-production-timsarom.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [a16c04b7] 	4bcbf79044b4944aa0ca14c05c8cd49eb64436f0
+ DEBUG [a16c04b7] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [9adfae8f] Running if test ! -d /home/timsarom/project/releases/20181129101711; then echo "Directory does not exist '/home/timsarom/project/releases/20181129101711'" 1>&2; false; fi on nginx
+ DEBUG [9adfae8f] Command: if test ! -d /home/timsarom/project/releases/20181129101711; then echo "Directory does not exist '/home/timsarom/project/releases/20181129101711'" 1>&2; false; fi
+ DEBUG [3d59c02d] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [65ed5d1f] Running /usr/bin/env echo "4bcbf79044b4944aa0ca14c05c8cd49eb64436f0" > REVISION on nginx
+ DEBUG [65ed5d1f] Command: cd /home/timsarom/project/releases/20181129101711 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env echo "4bcbf79044b4944aa0ca14c05c8cd49eb64436f0" > REVISION )
+  INFO [2de3f37e] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [026af7cf] Running /usr/bin/env mkdir -p /home/timsarom/project/releases/20181129101711/config on nginx
+ DEBUG [026af7cf] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env mkdir -p /home/timsarom/project/releases/20181129101711/config )
+  INFO [8773b7f0] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [3a894a90] Running [ -L /home/timsarom/project/releases/20181129101711/config/secrets.yml ] on nginx
+ DEBUG [3a894a90] Command: [ -L /home/timsarom/project/releases/20181129101711/config/secrets.yml ]
+ DEBUG [1324db73] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [eae2fed5] Running [ -f /home/timsarom/project/releases/20181129101711/config/secrets.yml ] on nginx
+ DEBUG [eae2fed5] Command: [ -f /home/timsarom/project/releases/20181129101711/config/secrets.yml ]
+ DEBUG [8e759e2f] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [7b336a60] Running /usr/bin/env rm /home/timsarom/project/releases/20181129101711/config/secrets.yml on nginx
+ DEBUG [7b336a60] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env rm /home/timsarom/project/releases/20181129101711/config/secrets.yml )
+  INFO [6d8d1197] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [cd382112] Running /usr/bin/env ln -s /home/timsarom/project/shared/config/secrets.yml /home/timsarom/project/releases/20181129101711/config/secrets.yml on nginx
+ DEBUG [cd382112] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ln -s /home/timsarom/project/shared/config/secrets.yml /home/timsarom/project/releases/20181129101711/config/secrets.yml )
+  INFO [eff3da43] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [d870c598] Running [ -L /home/timsarom/project/releases/20181129101711/config/database.yml ] on nginx
+ DEBUG [d870c598] Command: [ -L /home/timsarom/project/releases/20181129101711/config/database.yml ]
+ DEBUG [94e28312] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [a05711c5] Running [ -f /home/timsarom/project/releases/20181129101711/config/database.yml ] on nginx
+ DEBUG [a05711c5] Command: [ -f /home/timsarom/project/releases/20181129101711/config/database.yml ]
+ DEBUG [24595bd8] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [9467fa9a] Running /usr/bin/env rm /home/timsarom/project/releases/20181129101711/config/database.yml on nginx
+ DEBUG [9467fa9a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env rm /home/timsarom/project/releases/20181129101711/config/database.yml )
+  INFO [35ded776] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [1b74ac8a] Running /usr/bin/env ln -s /home/timsarom/project/shared/config/database.yml /home/timsarom/project/releases/20181129101711/config/database.yml on nginx
+ DEBUG [1b74ac8a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ln -s /home/timsarom/project/shared/config/database.yml /home/timsarom/project/releases/20181129101711/config/database.yml )
+  INFO [a930c1f2] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [456c1721] Running [ -L /home/timsarom/project/releases/20181129101711/config/database.yml ] on nginx
+ DEBUG [456c1721] Command: [ -L /home/timsarom/project/releases/20181129101711/config/database.yml ]
+ DEBUG [0cd8d29c] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [3c15b547] Running [ -L /home/timsarom/project/releases/20181129101711/config/secrets.yml ] on nginx
+ DEBUG [3c15b547] Command: [ -L /home/timsarom/project/releases/20181129101711/config/secrets.yml ]
+ DEBUG [0c49298b] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [42c986bd] Running /usr/bin/env mkdir -p /home/timsarom/project/releases/20181129101711 /home/timsarom/project/releases/20181129101711/tmp /home/timsarom/project/releases/20181129101711/public /home/timsarom/project/releases/20181129101711/vendor on nginx
+ DEBUG [42c986bd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env mkdir -p /home/timsarom/project/releases/20181129101711 /home/timsarom/project/releases/20181129101711/tmp /home/timsarom/project/releases/20181129101711/public /home/timsarom/project/releases/20181129101711/vendor )
+  INFO [9347675e] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [8740240d] Running [ -L /home/timsarom/project/releases/20181129101711/log ] on nginx
+ DEBUG [8740240d] Command: [ -L /home/timsarom/project/releases/20181129101711/log ]
+ DEBUG [4e519d83] Finished in 0.044 seconds with exit status 1 (failed).
+ DEBUG [9f98a81e] Running [ -d /home/timsarom/project/releases/20181129101711/log ] on nginx
+ DEBUG [9f98a81e] Command: [ -d /home/timsarom/project/releases/20181129101711/log ]
+ DEBUG [e86568e5] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [d02fd27a] Running /usr/bin/env rm -rf /home/timsarom/project/releases/20181129101711/log on nginx
+ DEBUG [d02fd27a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env rm -rf /home/timsarom/project/releases/20181129101711/log )
+  INFO [2c3be115] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [352a7d33] Running /usr/bin/env ln -s /home/timsarom/project/shared/log /home/timsarom/project/releases/20181129101711/log on nginx
+ DEBUG [352a7d33] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ln -s /home/timsarom/project/shared/log /home/timsarom/project/releases/20181129101711/log )
+  INFO [2b31e81c] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [dfc85830] Running [ -L /home/timsarom/project/releases/20181129101711/tmp/pids ] on nginx
+ DEBUG [dfc85830] Command: [ -L /home/timsarom/project/releases/20181129101711/tmp/pids ]
+ DEBUG [f567222d] Finished in 0.051 seconds with exit status 1 (failed).
+ DEBUG [ad9511a8] Running [ -d /home/timsarom/project/releases/20181129101711/tmp/pids ] on nginx
+ DEBUG [ad9511a8] Command: [ -d /home/timsarom/project/releases/20181129101711/tmp/pids ]
+ DEBUG [b41bbbd8] Finished in 0.044 seconds with exit status 1 (failed).
+  INFO [711278f1] Running /usr/bin/env ln -s /home/timsarom/project/shared/tmp/pids /home/timsarom/project/releases/20181129101711/tmp/pids on nginx
+ DEBUG [711278f1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ln -s /home/timsarom/project/shared/tmp/pids /home/timsarom/project/releases/20181129101711/tmp/pids )
+  INFO [f2dbf001] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [d95f8ba7] Running [ -L /home/timsarom/project/releases/20181129101711/tmp/cache ] on nginx
+ DEBUG [d95f8ba7] Command: [ -L /home/timsarom/project/releases/20181129101711/tmp/cache ]
+ DEBUG [4ea20491] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [5b374bb5] Running [ -d /home/timsarom/project/releases/20181129101711/tmp/cache ] on nginx
+ DEBUG [5b374bb5] Command: [ -d /home/timsarom/project/releases/20181129101711/tmp/cache ]
+ DEBUG [385211b3] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [98fabbb8] Running /usr/bin/env rm -rf /home/timsarom/project/releases/20181129101711/tmp/cache on nginx
+ DEBUG [98fabbb8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env rm -rf /home/timsarom/project/releases/20181129101711/tmp/cache )
+  INFO [69309c89] Finished in 0.218 seconds with exit status 0 (successful).
+  INFO [25ff99fe] Running /usr/bin/env ln -s /home/timsarom/project/shared/tmp/cache /home/timsarom/project/releases/20181129101711/tmp/cache on nginx
+ DEBUG [25ff99fe] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ln -s /home/timsarom/project/shared/tmp/cache /home/timsarom/project/releases/20181129101711/tmp/cache )
+  INFO [59521e39] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [886629dc] Running [ -L /home/timsarom/project/releases/20181129101711/tmp/sockets ] on nginx
+ DEBUG [886629dc] Command: [ -L /home/timsarom/project/releases/20181129101711/tmp/sockets ]
+ DEBUG [775c1dc4] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [2cbdcccf] Running [ -d /home/timsarom/project/releases/20181129101711/tmp/sockets ] on nginx
+ DEBUG [2cbdcccf] Command: [ -d /home/timsarom/project/releases/20181129101711/tmp/sockets ]
+ DEBUG [004d5783] Finished in 0.046 seconds with exit status 1 (failed).
+  INFO [264c6bc9] Running /usr/bin/env ln -s /home/timsarom/project/shared/tmp/sockets /home/timsarom/project/releases/20181129101711/tmp/sockets on nginx
+ DEBUG [264c6bc9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ln -s /home/timsarom/project/shared/tmp/sockets /home/timsarom/project/releases/20181129101711/tmp/sockets )
+  INFO [02131db3] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [112cba66] Running [ -L /home/timsarom/project/releases/20181129101711/public/system ] on nginx
+ DEBUG [112cba66] Command: [ -L /home/timsarom/project/releases/20181129101711/public/system ]
+ DEBUG [6da0babc] Finished in 0.045 seconds with exit status 1 (failed).
+ DEBUG [3951a583] Running [ -d /home/timsarom/project/releases/20181129101711/public/system ] on nginx
+ DEBUG [3951a583] Command: [ -d /home/timsarom/project/releases/20181129101711/public/system ]
+ DEBUG [f062a0d1] Finished in 0.044 seconds with exit status 1 (failed).
+  INFO [18c5e854] Running /usr/bin/env ln -s /home/timsarom/project/shared/public/system /home/timsarom/project/releases/20181129101711/public/system on nginx
+ DEBUG [18c5e854] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ln -s /home/timsarom/project/shared/public/system /home/timsarom/project/releases/20181129101711/public/system )
+  INFO [09a38690] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [c2752f71] Running [ -L /home/timsarom/project/releases/20181129101711/vendor/bundle ] on nginx
+ DEBUG [c2752f71] Command: [ -L /home/timsarom/project/releases/20181129101711/vendor/bundle ]
+ DEBUG [f597152e] Finished in 0.039 seconds with exit status 1 (failed).
+ DEBUG [659869b0] Running [ -d /home/timsarom/project/releases/20181129101711/vendor/bundle ] on nginx
+ DEBUG [659869b0] Command: [ -d /home/timsarom/project/releases/20181129101711/vendor/bundle ]
+ DEBUG [6b71723e] Finished in 0.045 seconds with exit status 1 (failed).
+  INFO [2dd163db] Running /usr/bin/env ln -s /home/timsarom/project/shared/vendor/bundle /home/timsarom/project/releases/20181129101711/vendor/bundle on nginx
+ DEBUG [2dd163db] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ln -s /home/timsarom/project/shared/vendor/bundle /home/timsarom/project/releases/20181129101711/vendor/bundle )
+  INFO [60ffb347] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [7d1ba9d1] Running [ -L /home/timsarom/project/releases/20181129101711/public/assets ] on nginx
+ DEBUG [7d1ba9d1] Command: [ -L /home/timsarom/project/releases/20181129101711/public/assets ]
+ DEBUG [37e3612c] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [66a8e730] Running [ -d /home/timsarom/project/releases/20181129101711/public/assets ] on nginx
+ DEBUG [66a8e730] Command: [ -d /home/timsarom/project/releases/20181129101711/public/assets ]
+ DEBUG [0a41968b] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [8abf76c9] Running /usr/bin/env rm -rf /home/timsarom/project/releases/20181129101711/public/assets on nginx
+ DEBUG [8abf76c9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env rm -rf /home/timsarom/project/releases/20181129101711/public/assets )
+  INFO [6273f53b] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [aaf5efb3] Running /usr/bin/env ln -s /home/timsarom/project/shared/public/assets /home/timsarom/project/releases/20181129101711/public/assets on nginx
+ DEBUG [aaf5efb3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ln -s /home/timsarom/project/shared/public/assets /home/timsarom/project/releases/20181129101711/public/assets )
+  INFO [3445a094] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [8a69ea11] Running if test ! -d /home/timsarom/project/releases/20181129101711; then echo "Directory does not exist '/home/timsarom/project/releases/20181129101711'" 1>&2; false; fi on nginx
+ DEBUG [8a69ea11] Command: if test ! -d /home/timsarom/project/releases/20181129101711; then echo "Directory does not exist '/home/timsarom/project/releases/20181129101711'" 1>&2; false; fi
+ DEBUG [7c083ce4] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [484b821c] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /home/timsarom/project/shared/bundle on nginx
+ DEBUG [484b821c] Command: cd /home/timsarom/project/releases/20181129101711 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /home/timsarom/project/shared/bundle )
+ DEBUG [98cf693d] 	The following gems are missing
+ DEBUG [98cf693d] 	 * net-ssh (5.0.2)
+ DEBUG [98cf693d] 	 * net-scp (1.2.1)
+ DEBUG [98cf693d] 	 * sshkit (1.18.0)
+ DEBUG [98cf693d] 	 * airbrussh (1.3.1)
+ DEBUG [98cf693d] 	 * bindex (0.5.0)
+ DEBUG [98cf693d] 	 * capistrano (3.11.0)
+ DEBUG [98cf693d] 	 * capistrano-bundler (1.4.0)
+ DEBUG [98cf693d] 	 * capistrano-rails (1.4.0)
+ DEBUG [98cf693d] 	 * capistrano-rbenv (2.1.4)
+ DEBUG [98cf693d] 	 * capistrano3-unicorn (0.2.1)
+ DEBUG [98cf693d] 	 * launchy (2.4.3)
+ DEBUG [98cf693d] 	 * letter_opener (1.6.0)
+ DEBUG [98cf693d] 	 * web-console (3.7.0)
+ DEBUG [98cf693d] 	Install missing gems with `bundle install`
+ DEBUG [98cf693d] Finished in 0.465 seconds with exit status 1 (failed).
+  INFO [0c9890aa] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /home/timsarom/project/shared/bundle --without development test --deployment --quiet on nginx
+ DEBUG [0c9890aa] Command: cd /home/timsarom/project/releases/20181129101711 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /home/timsarom/project/shared/bundle --without development test --deployment --quiet )
+  INFO [6efb2de9] Finished in 0.899 seconds with exit status 0 (successful).
+ DEBUG [672efdbf] Running if test ! -d /home/timsarom/project/releases/20181129101711; then echo "Directory does not exist '/home/timsarom/project/releases/20181129101711'" 1>&2; false; fi on nginx
+ DEBUG [672efdbf] Command: if test ! -d /home/timsarom/project/releases/20181129101711; then echo "Directory does not exist '/home/timsarom/project/releases/20181129101711'" 1>&2; false; fi
+ DEBUG [d4dc5b0a] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [9c190b15] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile on nginx
+ DEBUG [9c190b15] Command: cd /home/timsarom/project/releases/20181129101711 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [f9b4b8d6] 	Webpacker is installed 🎉 🍰
+ DEBUG [f9b4b8d6] 	
+ DEBUG [f9b4b8d6] 	Using /home/timsarom/project/releases/20181129101711/config/webpacker.yml file for setting up webpack paths
+ DEBUG [f9b4b8d6] 	
+ DEBUG [f9b4b8d6] 	Compiling…
+ DEBUG [f9b4b8d6] 	Compiled all packs in /home/timsarom/project/releases/20181129101711/public/packs
+  INFO [f9b4b8d6] Finished in 15.728 seconds with exit status 0 (successful).
+ DEBUG [d44adff0] Running if test ! -d /home/timsarom/project/releases/20181129101711; then echo "Directory does not exist '/home/timsarom/project/releases/20181129101711'" 1>&2; false; fi on nginx
+ DEBUG [d44adff0] Command: if test ! -d /home/timsarom/project/releases/20181129101711; then echo "Directory does not exist '/home/timsarom/project/releases/20181129101711'" 1>&2; false; fi
+ DEBUG [e37e8789] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [adb8c3b3] Running /usr/bin/env mkdir -p /home/timsarom/project/releases/20181129101711/assets_manifest_backup on nginx
+ DEBUG [adb8c3b3] Command: cd /home/timsarom/project/releases/20181129101711 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env mkdir -p /home/timsarom/project/releases/20181129101711/assets_manifest_backup )
+  INFO [9514ae86] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [805b72ad] Running /usr/bin/env ls /home/timsarom/project/releases/20181129101711/public/assets/.sprockets-manifest* on nginx
+ DEBUG [805b72ad] Command: cd /home/timsarom/project/releases/20181129101711 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ls /home/timsarom/project/releases/20181129101711/public/assets/.sprockets-manifest* )
+ DEBUG [1ed6bd0d] 	/home/timsarom/project/releases/20181129101711/public/assets/.sprockets-manifest-62d8f82644913b2e44413fcc140c9a5c.json
+ DEBUG [1ed6bd0d] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [1e0f9581] Running /usr/bin/env ls /home/timsarom/project/releases/20181129101711/public/assets/.sprockets-manifest* on nginx
+ DEBUG [1e0f9581] Command: cd /home/timsarom/project/releases/20181129101711 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ls /home/timsarom/project/releases/20181129101711/public/assets/.sprockets-manifest* )
+ DEBUG [7b84fcb2] 	/home/timsarom/project/releases/20181129101711/public/assets/.sprockets-manifest-62d8f82644913b2e44413fcc140c9a5c.json
+ DEBUG [7b84fcb2] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [68a72242] Running /usr/bin/env cp /home/timsarom/project/releases/20181129101711/public/assets/.sprockets-manifest-62d8f82644913b2e44413fcc140c9a5c.json /home/timsarom/project/releases/20181129101711/assets_manifest_backup on nginx
+ DEBUG [68a72242] Command: cd /home/timsarom/project/releases/20181129101711 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env cp /home/timsarom/project/releases/20181129101711/public/assets/.sprockets-manifest-62d8f82644913b2e44413fcc140c9a5c.json /home/timsarom/project/releases/20181129101711/assets_manifest_backup )
+  INFO [09b73bcf] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [dae5cd49] Running if test ! -d /home/timsarom/project/releases/20181129101711; then echo "Directory does not exist '/home/timsarom/project/releases/20181129101711'" 1>&2; false; fi on nginx
+ DEBUG [dae5cd49] Command: if test ! -d /home/timsarom/project/releases/20181129101711; then echo "Directory does not exist '/home/timsarom/project/releases/20181129101711'" 1>&2; false; fi
+ DEBUG [ca1aac00] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [2297ecac] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate on nginx
+ DEBUG [2297ecac] Command: cd /home/timsarom/project/releases/20181129101711 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [b6abb59a] Finished in 2.676 seconds with exit status 0 (successful).
+  INFO [ee65e5eb] Running /usr/bin/env ln -s /home/timsarom/project/releases/20181129101711 /home/timsarom/project/releases/current on nginx
+ DEBUG [ee65e5eb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ln -s /home/timsarom/project/releases/20181129101711 /home/timsarom/project/releases/current )
+  INFO [7945a633] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [ec9d6a3f] Running /usr/bin/env mv /home/timsarom/project/releases/current /home/timsarom/project on nginx
+ DEBUG [ec9d6a3f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env mv /home/timsarom/project/releases/current /home/timsarom/project )
+  INFO [bf9561cc] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [a823aaaa] Running /usr/bin/env ls -x /home/timsarom/project/releases on nginx
+ DEBUG [a823aaaa] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env ls -x /home/timsarom/project/releases )
+ DEBUG [07b0c6c5] 	20181128094813	20181128104949	20181128115638	20181128140608	20181129074554
+20181129101711
+ DEBUG [07b0c6c5] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on nginx
+ DEBUG [5cefae3e] Running [ -d /home/timsarom/project/current ] on nginx
+ DEBUG [5cefae3e] Command: [ -d /home/timsarom/project/current ]
+ DEBUG [4c53aa29] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [715cf72b] Running /usr/bin/env readlink /home/timsarom/project/current on nginx
+ DEBUG [715cf72b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env readlink /home/timsarom/project/current )
+ DEBUG [a1d5e6df] 	/home/timsarom/project/releases/20181129101711
+ DEBUG [a1d5e6df] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [29b5ce89] Running /usr/bin/env rm -rf /home/timsarom/project/releases/20181128094813 on nginx
+ DEBUG [29b5ce89] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env rm -rf /home/timsarom/project/releases/20181128094813 )
+  INFO [998828cf] Finished in 0.296 seconds with exit status 0 (successful).
+ DEBUG [356b2274] Running if test ! -d /home/timsarom/project/releases; then echo "Directory does not exist '/home/timsarom/project/releases'" 1>&2; false; fi on nginx
+ DEBUG [356b2274] Command: if test ! -d /home/timsarom/project/releases; then echo "Directory does not exist '/home/timsarom/project/releases'" 1>&2; false; fi
+ DEBUG [29a3ab2c] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [7048469f] Running /usr/bin/env echo "Branch master (at 4bcbf79044b4944aa0ca14c05c8cd49eb64436f0) deployed as release 20181129101711 by timsarom" >> /home/timsarom/project/revisions.log on nginx
+ DEBUG [7048469f] Command: cd /home/timsarom/project/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.4.4" ; /usr/bin/env echo "Branch master (at 4bcbf79044b4944aa0ca14c05c8cd49eb64436f0) deployed as release 20181129101711 by timsarom" >> /home/timsarom/project/revisions.log )
+  INFO [43a15d69] Finished in 0.051 seconds with exit status 0 (successful).
