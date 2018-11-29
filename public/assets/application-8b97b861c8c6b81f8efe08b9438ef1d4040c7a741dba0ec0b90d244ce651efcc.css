@@ -1,0 +1,543 @@
+/* line 6, /home/timsarom/Desktop/project/app/assets/stylesheets/carts.scss */
+.carts table {
+  border-collapse: collapse;
+}
+/* line 10, /home/timsarom/Desktop/project/app/assets/stylesheets/carts.scss */
+.carts td {
+  padding: 0.5em;
+}
+/* line 14, /home/timsarom/Desktop/project/app/assets/stylesheets/carts.scss */
+.carts td.quantity {
+  white-space: nowrap;
+}
+/* line 18, /home/timsarom/Desktop/project/app/assets/stylesheets/carts.scss */
+.carts td.quantity::after {
+  content: " x";
+}
+/* line 22, /home/timsarom/Desktop/project/app/assets/stylesheets/carts.scss */
+.carts td.price {
+  font-weight: bold;
+  text-align: right;
+}
+/* line 28, /home/timsarom/Desktop/project/app/assets/stylesheets/carts.scss */
+.carts tfoot th, .carts tfoot td.price {
+  font-weight: bold;
+  padding-top: 1em;
+}
+/* line 33, /home/timsarom/Desktop/project/app/assets/stylesheets/carts.scss */
+.carts tfoot th {
+  text-align: right;
+}
+/* line 37, /home/timsarom/Desktop/project/app/assets/stylesheets/carts.scss */
+.carts tfoot td.price {
+  border-top: solid thin;
+}
+/* line 42, /home/timsarom/Desktop/project/app/assets/stylesheets/carts.scss */
+.carts input[type="submit"] {
+  background-color: #881;
+  border-radius: 0.354em;
+  border: solid thin #441;
+  color: white;
+  font-size: 1em;
+  padding: 0.354em 1em;
+}
+/* line 51, /home/timsarom/Desktop/project/app/assets/stylesheets/carts.scss */
+.carts input[type="submit"]:hover {
+  background-color: #992;
+}
+@keyframes line-item-highlight {
+  0% {
+    background: #8f8;
+  }
+  100% {
+    background: none;
+  }
+}
+/* line 15, /home/timsarom/Desktop/project/app/assets/stylesheets/line_items.scss */
+.line-item-highlight {
+  animation: line-item-highlight 1s;
+}
+/* line 5, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products {
+  margin: 0;
+  padding: 0.5em;
+}
+/* line 9, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products a {
+  padding: 0.354em 0.5em;
+  border-radius: 0.354em;
+}
+/* line 14, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products table {
+  border-collapse: collapse;
+}
+/* line 18, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products td {
+  padding: 0.5em;
+  margin: 0;
+}
+/* line 23, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products tr.list_line_odd {
+  background-color: #effeef;
+}
+/* line 27, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products td.image {
+  display: none;
+}
+@media (min-width: 30em) {
+  /* line 27, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+  .products td.image {
+    display: block;
+  }
+  /* line 33, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+  .products td.image img {
+    height: 11.3em;
+  }
+}
+/* line 40, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products td.description h1 {
+  font-size: 1.4em;
+}
+/* line 46, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products td.actions ul {
+  padding: 0;
+  list-style: none;
+}
+/* line 50, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products td.actions ul li {
+  padding: 0.5em 0.5em;
+}
+/* line 57, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products tfoot td {
+  padding: 0.5em 0;
+}
+@keyframes product-highlight {
+  0% {
+    background: #8f8;
+  }
+  100% {
+    background: none;
+  }
+}
+/* line 72, /home/timsarom/Desktop/project/app/assets/stylesheets/products.scss */
+.products .product-highlight {
+  animation: product-highlight 1s;
+}
+/* line 1, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /home/timsarom/Desktop/project/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /home/timsarom/Desktop/project/app/assets/stylesheets/store.scss */
+.store {
+  max-width: 80em;
+}
+/* line 8, /home/timsarom/Desktop/project/app/assets/stylesheets/store.scss */
+.store ul.catalog {
+  border-top: solid 0.250em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 14, /home/timsarom/Desktop/project/app/assets/stylesheets/store.scss */
+.store ul.catalog li {
+  padding: 1em;
+  margin: 0;
+  border-bottom: solid thin #ddd;
+}
+/* line 23, /home/timsarom/Desktop/project/app/assets/stylesheets/store.scss */
+.store ul.catalog li::after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+/* line 29, /home/timsarom/Desktop/project/app/assets/stylesheets/store.scss */
+.store ul.catalog li img {
+  float: left;
+  padding: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0.176em 0.176em 0.354em 0px rgba(0, 0, 0, 0.75);
+}
+/* line 37, /home/timsarom/Desktop/project/app/assets/stylesheets/store.scss */
+.store ul.catalog li .price {
+  font-size: 1.414em;
+}
+/* line 41, /home/timsarom/Desktop/project/app/assets/stylesheets/store.scss */
+.store ul.catalog li form, .store ul.catalog li div {
+  display: inline;
+}
+/* line 45, /home/timsarom/Desktop/project/app/assets/stylesheets/store.scss */
+.store ul.catalog li input[type="submit"] {
+  background-color: #282;
+  border-radius: 0.354em;
+  border: solid thin #141;
+  color: white;
+  font-size: 1em;
+  padding: 0.354em 1em;
+}
+/* line 54, /home/timsarom/Desktop/project/app/assets/stylesheets/store.scss */
+.store ul.catalog li input[type="submit"]:hover {
+  background-color: #141;
+}
+
+@keyframes product-highlight {
+  0% {
+    background: #8f8;
+  }
+  100% {
+    background: none;
+  }
+}
+/* line 71, /home/timsarom/Desktop/project/app/assets/stylesheets/store.scss */
+.product-highlight {
+  animation: product-highlight 1s;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 23, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+header.main {
+  text-align: center;
+  background: #282;
+  margin: 0;
+}
+@media (min-width: 30em) {
+  /* line 23, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+  header.main {
+    text-align: left;
+  }
+}
+/* line 33, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+header.main h1 {
+  display: none;
+}
+
+/* line 38, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.content {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+@media (min-width: 30em) {
+  /* line 38, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+  .content {
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+  }
+}
+/* line 53, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.content nav {
+  padding-bottom: 1em;
+  background: #141;
+  text-align: center;
+}
+@media (min-width: 30em) {
+  /* line 53, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+  .content nav {
+    text-align: center;
+    padding: 1em;
+  }
+}
+/* line 64, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.content nav #time {
+  color: white;
+}
+/* line 68, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.content nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 30em) {
+  /* line 68, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+  .content nav ul {
+    padding-right: 1em;
+  }
+}
+/* line 77, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.content nav ul li {
+  margin: 0;
+  padding: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.354em;
+}
+/* line 83, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.content nav ul li a {
+  color: #bfb;
+  text-decoration: none;
+}
+/* line 88, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.content nav ul li a:hover {
+  background: none;
+  color: white;
+}
+/* line 96, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.content main {
+  padding: 0.5em;
+}
+
+/* line 101, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.notice, #notice {
+  background: #ffb;
+  border-radius: 0.5em;
+  border: solid 0.177em #882;
+  color: #882;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding: 1em 1.414em;
+  text-align: center;
+}
+
+/* line 113, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+#cart article {
+  background: white;
+  border-radius: 0.5em;
+  margin: 1em;
+  padding: 1.414em;
+}
+/* line 115, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+#cart article h2 {
+  margin-top: 0;
+}
+@media (min-width: 30em) {
+  /* line 113, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+  #cart article {
+    margin: 0;
+  }
+}
+
+/* line 130, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form {
+  padding: 0 1em;
+}
+/* line 133, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form h1 {
+  font-size: 1.99em;
+  line-height: 1.41em;
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+/* line 140, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form .field, .depot_form .actions {
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+/* line 145, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form .actions {
+  text-align: right;
+  padding: 1em 0;
+}
+/* line 150, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form input, .depot_form textarea, .depot_form select, .depot_form option {
+  border: solid thin #888;
+  box-sizing: border-box;
+  font-size: 1em;
+  padding: 0.5em;
+  width: 100%;
+}
+/* line 158, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form label {
+  padding: 0.5em 0;
+}
+/* line 162, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form input[type="submit"] {
+  background-color: #bfb;
+  border-radius: 0.354em;
+  border: solid thin #888;
+  color: black;
+  font-size: 1.41em;
+  font-weight: bold;
+  padding: 0.354em 1em;
+}
+/* line 172, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form input[type="submit"]:hover {
+  background-color: #9d9;
+}
+/* line 176, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form #error_explanation {
+  background-color: white;
+  border-radius: 1em;
+  border: solid thin red;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  width: 100%;
+}
+/* line 184, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form #error_explanation h2 {
+  background: none;
+  color: red;
+  font-size: 1.41em;
+  line-height: 1.41em;
+  padding: 1em;
+}
+/* line 192, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form #error_explanation ul {
+  margin-top: 0;
+}
+/* line 195, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form #error_explanation ul li {
+  color: red;
+  font-size: 1em;
+}
+/* line 202, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form .field_with_errors {
+  background: none;
+  color: red;
+  width: 100%;
+}
+/* line 207, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form .field_with_errors label {
+  font-weight: bold;
+}
+/* line 211, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form .field_with_errors label::before {
+  content: "! ";
+}
+/* line 215, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.depot_form .field_with_errors input, .depot_form .field_with_errors textarea {
+  background: pink;
+}
+
+/* line 221, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+nav.logged_in_nav {
+  border-top: solid thin #bfb;
+  padding: 0.354em 0;
+  margin-top: 0.354em;
+}
+/* line 226, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+nav.logged_in_nav input[type="submit"] {
+  background: none;
+  border: none;
+  color: #bfb;
+  font-size: 1em;
+  letter-spacing: 0.354em;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+/* line 237, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+nav.logged_in_nav input[type="submit"]:hover {
+  color: white;
+}
+
+/* line 242, /home/timsarom/Desktop/project/app/assets/stylesheets/application.scss */
+.locale {
+  float: right;
+  margin: 1em;
+}

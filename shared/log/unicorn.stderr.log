@@ -720,3 +720,62 @@ D, [2018-11-28T14:27:15.854743 #2847] DEBUG -- : waiting 16.0s after suspend/hib
 [DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
 [DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
 [DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+I, [2018-11-28T16:11:38.593205 #7328]  INFO -- : executing ["/home/timsarom/.rbenv/versions/2.4.4/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/home/timsarom/Desktop/project/shared/sockets/unicorn.sock>}] (in /home/timsarom/Desktop/project)
+I, [2018-11-28T16:11:38.593344 #7328]  INFO -- : forked child re-executing...
+I, [2018-11-28T16:11:38.851763 #7328]  INFO -- : inherited addr=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock fd=11
+I, [2018-11-28T16:11:38.852083 #7328]  INFO -- : Refreshing Gem list
+I, [2018-11-28T16:11:40.807578 #7328]  INFO -- : worker=0 spawning...
+I, [2018-11-28T16:11:40.809396 #7328]  INFO -- : worker=1 spawning...
+I, [2018-11-28T16:11:40.810717 #7328]  INFO -- : master process ready
+I, [2018-11-28T16:11:40.812257 #7342]  INFO -- : worker=1 spawned pid=7342
+I, [2018-11-28T16:11:40.812502 #7342]  INFO -- : worker=1 ready
+I, [2018-11-28T16:11:40.811625 #7340]  INFO -- : worker=0 spawned pid=7340
+I, [2018-11-28T16:11:40.812799 #7340]  INFO -- : worker=0 ready
+I, [2018-11-28T16:11:48.442164 #7328]  INFO -- : reaped #<Process::Status: pid 7340 exit 0> worker=0
+I, [2018-11-28T16:11:48.442338 #7328]  INFO -- : reaped #<Process::Status: pid 7342 exit 0> worker=1
+I, [2018-11-28T16:11:48.442411 #7328]  INFO -- : master complete
+E, [2018-11-28T16:11:48.489307 #2847] ERROR -- : reaped #<Process::Status: pid 7328 exit 0> exec()-ed
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation

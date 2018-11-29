@@ -5,7 +5,7 @@
 <h1><%= t('.title_html') %></h1>
 <%= @visits %>
 <ul class="catalog">
-	<% cache @products do %>
+	<% cache [(@products, locale: I18n.locale)] do %>
 		<% @products.each do |product| %>
 			 <% if product.locale == I18n.locale.to_s %>
 				<% cache product do %>
