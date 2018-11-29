@@ -39,8 +39,8 @@ config.webpacker.check_yarn_integrity = false
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
-  config.web_socket_server_url = 'wss://localhost/cable'
-  config.action_cable.url = 'wss://localhost/cable'
+  config.web_socket_server_url = 'ws://localhost/cable'
+  config.action_cable.url = 'ws://localhost/cable'
   config.action_cable.allowed_request_origins = [ 'http://localhost' ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.

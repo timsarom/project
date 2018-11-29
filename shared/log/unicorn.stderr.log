@@ -942,3 +942,16 @@ I, [2018-11-29T16:38:37.325561 #2011]  INFO -- : worker=0 spawned pid=2011
 I, [2018-11-29T16:38:37.325702 #2011]  INFO -- : worker=0 ready
 I, [2018-11-29T16:38:37.326269 #2013]  INFO -- : worker=1 spawned pid=2013
 I, [2018-11-29T16:38:37.326360 #2013]  INFO -- : worker=1 ready
+I, [2018-11-29T16:58:01.240931 #1966]  INFO -- : reaped #<Process::Status: pid 2011 exit 0> worker=0
+I, [2018-11-29T16:58:01.241014 #1966]  INFO -- : reaped #<Process::Status: pid 2013 exit 0> worker=1
+I, [2018-11-29T16:58:01.241062 #1966]  INFO -- : master complete
+I, [2018-11-29T16:58:58.269616 #2160]  INFO -- : Refreshing Gem list
+I, [2018-11-29T16:59:01.197923 #2160]  INFO -- : unlinking existing socket=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock
+I, [2018-11-29T16:59:01.198059 #2160]  INFO -- : listening on addr=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock fd=11
+I, [2018-11-29T16:59:01.198136 #2160]  INFO -- : worker=0 spawning...
+I, [2018-11-29T16:59:01.199053 #2160]  INFO -- : worker=1 spawning...
+I, [2018-11-29T16:59:01.199972 #2160]  INFO -- : master process ready
+I, [2018-11-29T16:59:01.204218 #2163]  INFO -- : worker=0 spawned pid=2163
+I, [2018-11-29T16:59:01.204716 #2163]  INFO -- : worker=0 ready
+I, [2018-11-29T16:59:01.205213 #2165]  INFO -- : worker=1 spawned pid=2165
+I, [2018-11-29T16:59:01.205325 #2165]  INFO -- : worker=1 ready
