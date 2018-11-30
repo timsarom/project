@@ -955,3 +955,73 @@ I, [2018-11-29T16:59:01.204218 #2163]  INFO -- : worker=0 spawned pid=2163
 I, [2018-11-29T16:59:01.204716 #2163]  INFO -- : worker=0 ready
 I, [2018-11-29T16:59:01.205213 #2165]  INFO -- : worker=1 spawned pid=2165
 I, [2018-11-29T16:59:01.205325 #2165]  INFO -- : worker=1 ready
+I, [2018-11-29T17:03:40.753961 #2160]  INFO -- : reaped #<Process::Status: pid 2163 exit 0> worker=0
+I, [2018-11-29T17:03:40.754044 #2160]  INFO -- : reaped #<Process::Status: pid 2165 exit 0> worker=1
+I, [2018-11-29T17:03:40.754088 #2160]  INFO -- : master complete
+I, [2018-11-29T17:04:23.820177 #1922]  INFO -- : Refreshing Gem list
+I, [2018-11-29T17:04:29.233980 #1922]  INFO -- : unlinking existing socket=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock
+I, [2018-11-29T17:04:29.234105 #1922]  INFO -- : listening on addr=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock fd=11
+I, [2018-11-29T17:04:29.234204 #1922]  INFO -- : worker=0 spawning...
+I, [2018-11-29T17:04:29.234917 #1922]  INFO -- : worker=1 spawning...
+I, [2018-11-29T17:04:29.235617 #1922]  INFO -- : master process ready
+I, [2018-11-29T17:04:29.245867 #2014]  INFO -- : worker=0 spawned pid=2014
+I, [2018-11-29T17:04:29.246163 #2014]  INFO -- : worker=0 ready
+I, [2018-11-29T17:04:29.246827 #2016]  INFO -- : worker=1 spawned pid=2016
+I, [2018-11-29T17:04:29.246970 #2016]  INFO -- : worker=1 ready
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+I, [2018-11-29T17:21:47.693453 #1922]  INFO -- : reaped #<Process::Status: pid 2014 exit 0> worker=0
+I, [2018-11-29T17:21:47.693541 #1922]  INFO -- : reaped #<Process::Status: pid 2016 exit 0> worker=1
+I, [2018-11-29T17:21:47.693589 #1922]  INFO -- : master complete
+I, [2018-11-29T17:22:29.040387 #1901]  INFO -- : Refreshing Gem list
+I, [2018-11-29T17:22:31.419560 #1901]  INFO -- : unlinking existing socket=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock
+I, [2018-11-29T17:22:31.419747 #1901]  INFO -- : listening on addr=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock fd=11
+I, [2018-11-29T17:22:31.419834 #1901]  INFO -- : worker=0 spawning...
+I, [2018-11-29T17:22:31.421003 #1901]  INFO -- : worker=1 spawning...
+I, [2018-11-29T17:22:31.421840 #1901]  INFO -- : master process ready
+I, [2018-11-29T17:22:31.426017 #1934]  INFO -- : worker=0 spawned pid=1934
+I, [2018-11-29T17:22:31.426559 #1936]  INFO -- : worker=1 spawned pid=1936
+I, [2018-11-29T17:22:31.426675 #1936]  INFO -- : worker=1 ready
+I, [2018-11-29T17:22:31.426137 #1934]  INFO -- : worker=0 ready
+I, [2018-11-30T10:05:27.335496 #1901]  INFO -- : reaped #<Process::Status: pid 1934 exit 0> worker=0
+I, [2018-11-30T10:05:27.335588 #1901]  INFO -- : reaped #<Process::Status: pid 1936 exit 0> worker=1
+I, [2018-11-30T10:05:27.335640 #1901]  INFO -- : master complete
+I, [2018-11-30T10:09:36.294074 #2232]  INFO -- : Refreshing Gem list
+I, [2018-11-30T10:09:39.092015 #2232]  INFO -- : unlinking existing socket=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock
+I, [2018-11-30T10:09:39.092143 #2232]  INFO -- : listening on addr=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock fd=11
+I, [2018-11-30T10:09:39.092217 #2232]  INFO -- : worker=0 spawning...
+I, [2018-11-30T10:09:39.092994 #2232]  INFO -- : worker=1 spawning...
+I, [2018-11-30T10:09:39.093632 #2232]  INFO -- : master process ready
+I, [2018-11-30T10:09:39.098079 #2235]  INFO -- : worker=0 spawned pid=2235
+I, [2018-11-30T10:09:39.098209 #2235]  INFO -- : worker=0 ready
+I, [2018-11-30T10:09:39.098773 #2237]  INFO -- : worker=1 spawned pid=2237
+I, [2018-11-30T10:09:39.098865 #2237]  INFO -- : worker=1 ready
+I, [2018-11-30T10:19:22.387876 #2232]  INFO -- : reaped #<Process::Status: pid 2235 exit 0> worker=0
+I, [2018-11-30T10:19:22.387943 #2232]  INFO -- : reaped #<Process::Status: pid 2237 exit 0> worker=1
+I, [2018-11-30T10:19:22.387987 #2232]  INFO -- : master complete
+I, [2018-11-30T13:24:11.042719 #2254]  INFO -- : Refreshing Gem list
+I, [2018-11-30T13:24:14.020292 #2254]  INFO -- : unlinking existing socket=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock
+I, [2018-11-30T13:24:14.020457 #2254]  INFO -- : listening on addr=/home/timsarom/Desktop/project/shared/sockets/unicorn.sock fd=11
+I, [2018-11-30T13:24:14.020532 #2254]  INFO -- : worker=0 spawning...
+I, [2018-11-30T13:24:14.021455 #2254]  INFO -- : worker=1 spawning...
+I, [2018-11-30T13:24:14.022489 #2254]  INFO -- : master process ready
+I, [2018-11-30T13:24:14.026965 #2257]  INFO -- : worker=0 spawned pid=2257
+I, [2018-11-30T13:24:14.027102 #2257]  INFO -- : worker=0 ready
+I, [2018-11-30T13:24:14.027708 #2259]  INFO -- : worker=1 spawned pid=2259
+I, [2018-11-30T13:24:14.027794 #2259]  INFO -- : worker=1 ready
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation
+[DEPRECATION] You are using the default localization behaviour that will change in the next major release. Find out more - https://github.com/RubyMoney/money#deprecation

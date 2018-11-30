@@ -20,6 +20,10 @@ class StoreController < ApplicationController
     if session[:counter].nil?
       session[:counter] = 0
     end
-    session[:counter] += 1
+    if params[:set_locale]
+      session[:counter] += 0
+    else
+      session[:counter] += 1
+    end
   end
 end

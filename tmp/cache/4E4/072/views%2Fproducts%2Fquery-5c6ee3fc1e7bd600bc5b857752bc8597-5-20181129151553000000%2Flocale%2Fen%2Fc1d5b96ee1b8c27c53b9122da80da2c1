@@ -1,0 +1,61 @@
+o: ActiveSupport::Cache::Entry:@valueI"c					<li class="1">
+						<a rel="nofollow" data-method="post" href="/line_items?product_id=1"><img src="/assets/dcbang-ad9b1d51642858e55eef18318f2aa44d3dab14670e8441658a4efef032ce0dc9.jpg" alt="Dcbang" /></a>
+						<h2>Rails, Angular, Postgres, and Bootstrap</h2>
+						<p>
+							<p>
+      <em>Powerful, Effective, and Efficient Full-Stack Web Development</em>
+      As a Rails developer, you care about user experience and performance,
+      but you also want simple and maintainable code. Achieve all that by
+      embracing the full stack of web development, from styling with
+      Bootstrap, building an interactive user interface with AngularJS, to
+      storing data quickly and reliably in PostgreSQL. Take a holistic view of
+      full-stack development to create usable, high-performing applications,
+      and learn to use these technologies effectively in a Ruby on Rails
+      environment.
+      </p>
+						</p>
+						<div class="price">
+							$50
+							<form class="button_to" method="post" action="/en/line_items?product_id=1" data-remote="true"><input type="submit" value="Add to Cart" /><input type="hidden" name="authenticity_token" value="MYFZrMsvWlV+mvo0KY5IOWCw+CJ5T4C+K/hOC5+CU0ei4a1VmicVA8t987i/DxCy0Nf3+i+tC5m+7UTl7ZUy8Q==" /></form>
+						</div>
+					</li>
+					<li class="3">
+						<a rel="nofollow" data-method="post" href="/line_items?product_id=3"><img src="/assets/adrpo-23a974519e0d4353c6906f82b40bd4cd98b09a2ce748825370c7aa59763f5ac7.jpg" alt="Adrpo" /></a>
+						<h2>Ruby Performance Optimization</h2>
+						<p>
+							<p>
+      <em>Why Ruby Is Slow, and How to Fix It</em> 
+      You don’t have to accept slow Ruby or Rails performance. In this
+      comprehensive guide to Ruby optimization, you’ll learn how to write
+      faster Ruby code—but that’s just the beginning. See exactly what makes
+      Ruby and Rails code slow, and how to fix it. Alex Dymo will guide you
+      through perils of memory and CPU optimization, profiling, measuring,
+      performance testing, garbage collection, and tuning. You’ll find that
+      all those “hard” things aren’t so difficult after all, and your code
+      will run orders of magnitude faster.
+      </p>
+						</p>
+						<div class="price">
+							$46
+							<form class="button_to" method="post" action="/en/line_items?product_id=3" data-remote="true"><input type="submit" value="Add to Cart" /><input type="hidden" name="authenticity_token" value="pf2nyDuyu2UzwsdAiM70B18c0p2SBTg3lGzsmd+8grlbT9Ce2nSAtQbG+orjzaiVPrK8CyotX6ykia/viUe+yw==" /></form>
+						</div>
+					</li>
+					<li class="2">
+						<a rel="nofollow" data-method="post" href="/line_items?product_id=2"><img src="/assets/7apps-f67c3d908f537bac34a290206cc1db4c6f4611196c550e49ba836b796a2602bb.jpg" alt="7apps" /></a>
+						<h2>Seven Mobile Apps in Seven Weeks</h2>
+						<p>
+							<p>
+      <em>Native Apps, Multiple Platforms</em>
+      Answer the question “Can we build this for ALL the devices?” with a
+      resounding YES. This book will help you get there with a real-world
+      introduction to seven platforms, whether you’re new to mobile or an
+      experienced developer needing to expand your options. Plus, you’ll find
+      out which cross-platform solution makes the most sense for your needs.
+      </p>
+						</p>
+						<div class="price">
+							$35
+							<form class="button_to" method="post" action="/en/line_items?product_id=2" data-remote="true"><input type="submit" value="Add to Cart" /><input type="hidden" name="authenticity_token" value="MgL19/ZLc176qWqm0+RIG52/K4ls5jgvvw+/oMf6+0rMsIKhF41Ijs+tV2y45xSJ/BFFH9TOX7SP6vzWkQHHOA==" /></form>
+						</div>
+					</li>
+:ET:@created_atf1543504580.536989:@expires_in0

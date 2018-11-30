@@ -1,0 +1,22 @@
+o: ActiveSupport::Cache::Entry:@valueI"					<li class="1">
+						<a rel="nofollow" data-method="post" href="/line_items?product_id=1"><img src="/assets/dcbang-ad9b1d51642858e55eef18318f2aa44d3dab14670e8441658a4efef032ce0dc9.jpg" alt="Dcbang" /></a>
+						<h2>Rails, Angular, Postgres, and Bootstrap</h2>
+						<p>
+							<p>
+      <em>Powerful, Effective, and Efficient Full-Stack Web Development</em>
+      As a Rails developer, you care about user experience and performance,
+      but you also want simple and maintainable code. Achieve all that by
+      embracing the full stack of web development, from styling with
+      Bootstrap, building an interactive user interface with AngularJS, to
+      storing data quickly and reliably in PostgreSQL. Take a holistic view of
+      full-stack development to create usable, high-performing applications,
+      and learn to use these technologies effectively in a Ruby on Rails
+      environment.
+      </p>
+						</p>
+						<div class="price">
+							$40
+							<form class="button_to" method="post" action="/en/line_items?product_id=1" data-remote="true"><input type="submit" value="Add to Cart" /><input type="hidden" name="authenticity_token" value="b9jk2ikELFm56X9mLyuJPGHkn+Huc7sBG7Ryie2Sg+T8uBAjeAxjDwwOduq5qtG30YOQObiRMCaOoXhnn4XiUg==" /></form>
+						</div>
+					</li>
+:ET:@created_atf1543504515.0479362:@expires_in0

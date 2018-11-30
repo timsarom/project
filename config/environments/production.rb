@@ -39,7 +39,6 @@ config.webpacker.check_yarn_integrity = false
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
-  config.web_socket_server_url = 'ws://localhost/cable'
   config.action_cable.url = 'ws://localhost/cable'
   config.action_cable.allowed_request_origins = [ 'http://localhost' ]
 

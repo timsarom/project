@@ -34,7 +34,7 @@
           <%= render_if @cart && @cart.line_items.any?, @cart %>
         </div>
         <% end %>
-        <ul>
+        <ul data-turbolinks="false">
           <li><a href="/"><%= t('.home') %></a></li>
           <li><a href="/questions"><%= t('.questions') %></a></li>
           <li><a href="/news"><%= t('.news') %></a></li>
